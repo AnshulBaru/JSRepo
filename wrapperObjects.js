@@ -455,17 +455,26 @@ console.log(message);
 //FUNCITONS
 
 //Creation or definiton of function
-function greetUser( ){
-    console.log("Hello User, welcome to the App!");
+// function greetUser() {
+//     console.log('Hello! Welcome to JavaScript');
+// }   //function is defined but not called
+
+// //In order to use this function we have to call it or in technical term we have to invoke it:
+// greetUser();                 //function is called or invoked
+// greetUser();
+
+//Function using parameters
+// function greetUser(userName) {
+//     console.log(`Hello ${userName}, welcome to the App!`);
+// }
+
+// greetUser('Rahul');
+// greetUser('Surya');    //In this way parameters are helpful in making the function more dynamic
+
+function greetUser(userName, medium){
+    console.log(
+        `Hello ${userName}, welcome to the ${medium}!`
+    );
 }
-
-//Call or invoke a funcions
-
-greetUser();  
-greetUser();
-
-
-
-
-
-
+greetUser('Rahul', 'city');
+greetUser('Aryan', 'Website');
