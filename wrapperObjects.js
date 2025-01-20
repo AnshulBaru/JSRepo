@@ -410,8 +410,8 @@ console.log("5" * 2);
 
 // let randomNum = Math.random();                  //will give any random no. from 0 to 1
 // let randomNum = Math.random() * 100;            //will give any random no. from 0 to 100
-let randomNum = Math.round(Math.random() * 100);    //in additont to above it will round off the number
-console.log(randomNum);
+// let randomNum = Math.round(Math.random() * 100);    //in additont to above it will round off the number
+// console.log(randomNum);
 
 // let guessedNum;
 // do {
@@ -425,11 +425,11 @@ console.log(randomNum);
 // } while (guessedNum != randomNum);      
 
 
-const name = "Ram";
-const age = 25;
-const message = `My name is ${name}, and I am ${age} years old.`;   // `` this is tempelate literals
+// const name = "Ram";
+// const age = 25;
+// const message = `My name is ${name}, and I am ${age} years old.`;   // `` this is tempelate literals
 // used to represent a strng
-console.log(message);
+// console.log(message);
 // Output: My name is Ram, and I am 25 years old
 
 
@@ -471,10 +471,22 @@ console.log(message);
 // greetUser('Rahul');
 // greetUser('Surya');    //In this way parameters are helpful in making the function more dynamic
 
-function greetUser(userName, medium){
-    console.log(
-        `Hello ${userName}, welcome to the ${medium}!`
-    );
+// function greetUser(userName, medium){
+//     console.log(
+//         `Hello ${userName}, welcome to the ${medium}!`
+//     );
+// }
+// greetUser('Rahul', 'city');
+// greetUser('Aryan', 'Website');
+// greetUser('shaam', 'Office');
+
+// WE CAN CALL A FUNCTION INSIDE ANOTHER FUNCTION
+
+function printDetails(name){
+    console.log(`Name: ${name}`);
+    calculateAge(1995); 
 }
-greetUser('Rahul', 'city');
-greetUser('Aryan', 'Website');
+ function calculateAge(birthYear){
+    console.log(2020 - birthYear);
+ }
+ printDetails('Rahul');
