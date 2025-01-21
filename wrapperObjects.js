@@ -490,3 +490,9 @@ function printDetails(name){
     console.log(2020 - birthYear);
  }
  printDetails('Rahul');
+ 
+ //Default Parameters:
+  function sum(num1, num2){
+    console.log("Sum of the numbers is:" (num1+num1))
+  }
+  sum(4,5)
