@@ -491,8 +491,11 @@ function printDetails(name){
  }
  printDetails('Rahul');
  
+
  //Default Parameters:
-  function sum(num1, num2){
-    console.log("Sum of the numbers is:" (num1+num1))
+  function sum(num1 =5, num2=3){        //Default values are given to parameters because in case we forget to give arguments
+                                        // Argument are the values passed to the function when it is called/Invoked.
+    console.log( `Sum of the numbers is: ${num1+num2}`)
   }
-  sum(4,5)
+  sum(4,5);
+  sum(4);
