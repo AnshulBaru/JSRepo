@@ -509,6 +509,7 @@ function squared(number){
 const a  = squared(5);
 console.log(a);
 console.log( 10 * a);
+console.log(10* a);
 
 
      
