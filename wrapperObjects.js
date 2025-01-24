@@ -508,8 +508,16 @@ function squared(number){
 }
 const a  = squared(5);
 console.log(a);
-console.log( 10 * a);
-console.log(10* a);
+
+function add(a, b) {
+  return a + b;  // returns the sum of a and b
+}
+
+ result = add(3, 4);  // calls the function and stores the value(7) in variale named 'result'
+console.log(result);  
+
+
+
 
 
      
