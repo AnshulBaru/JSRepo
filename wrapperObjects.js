@@ -511,8 +511,8 @@ console.log(a);
 
 function add(a, b) {
   return a + b;  // returns the sum of a and b
+  console.log(a+b);    // this code will not be executed because any code after the retrun statement will not be executed.
 }
-
  result = add(3, 4);  // calls the function and stores the value(7) in variale named 'result'
 console.log(result);  
 
