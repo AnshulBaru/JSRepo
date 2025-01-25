@@ -517,6 +517,22 @@ function add(a, b) {
 console.log(result);  
 
 
+// Function to compare the last digits of two numbers
+function lastDigit(num1, num2) {
+  // Extract the last digits of both numbers
+  const lastDigit1 = num1 % 10;
+  const lastDigit2 = num2 % 10;
+
+  // Check if the last digits are equal
+  return lastDigit1 === lastDigit2;
+}
+
+// Test cases
+console.log(lastDigit(29, 19)); // Expected output: true
+console.log(lastDigit(12, 24)); // Expected output: false
+console.log(lastDigit(101, 11)); // Expected output: true
+console.log(lastDigit(5, 12345)); // Expected output: true
+console.log(lastDigit(78, 89)); // Expected output: false
 
 
 
