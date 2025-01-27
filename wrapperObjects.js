@@ -581,3 +581,4 @@ function commonDigits(num1, num2) {
 // Test cases
 console.log(commonDigits(78574, 78392)); // Expected output: true
 console.log(commonDigits(74847, 781));   
+console.log(commonDigits(11234, 11455))
