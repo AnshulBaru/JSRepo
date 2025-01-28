@@ -582,3 +582,7 @@ function commonDigits(num1, num2) {
 console.log(commonDigits(78574, 78392)); // Expected output: true
 console.log(commonDigits(74847, 781));   
 console.log(commonDigits(11234, 11455))
+
+//** ARRAYS IN JS */
+const historyMarks= [10,20,30,40,50,60,70];   //length of array is 7 but index no. of array is 6 (index no. = lenghth-1)
+console.log(historyMarks);
