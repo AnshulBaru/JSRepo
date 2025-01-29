@@ -503,18 +503,18 @@ sum();
 
 // ** Return value of a funtion:
 
-function squared(number){
-  return number * number;   
+function squared(number) {
+  return number * number;
 }
-const a  = squared(5);
+const a = squared(5);
 console.log(a);
 
 function add(a, b) {
   return a + b;  // returns the sum of a and b
-  console.log(a+b);    // this code will not be executed because any code after the retrun statement will not be executed.
+  console.log(a + b);    // this code will not be executed because any code after the retrun statement will not be executed.
 }
- result = add(3, 4);  // calls the function and stores the value(7) in variale named 'result'
-console.log(result);  
+result = add(3, 4);  // calls the function and stores the value(7) in variale named 'result'
+console.log(result);
 
 
 // Function to compare the last digits of two numbers
@@ -580,9 +580,11 @@ function commonDigits(num1, num2) {
 
 // Test cases
 console.log(commonDigits(78574, 78392)); // Expected output: true
-console.log(commonDigits(74847, 781));   
+console.log(commonDigits(74847, 781));
 console.log(commonDigits(11234, 11455))
 
 //** ARRAYS IN JS */
-const historyMarks= [10,20,30,40,50,60,70];   //length of array is 7 but index no. of array is 6 (index no. = lenghth-1)
+const historyMarks = [10, 20, 30, 40, 50, 60, 70];   //length of array is 7 but index no. of array is 6 (index no. = lenghth-1)
 console.log(historyMarks);
+const fruits = ["Apple", "Banana", "Mango"];
+console.log(fruits);
