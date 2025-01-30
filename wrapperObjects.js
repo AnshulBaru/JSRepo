@@ -584,7 +584,32 @@ console.log(commonDigits(74847, 781));
 console.log(commonDigits(11234, 11455))
 
 //** ARRAYS IN JS */
-const historyMarks = [10, 20, 30, 40, 50, 60, 70];   //length of array is 7 but index no. of array is 6 (index no. = lenghth-1)
+const studentDetails=['Alex','1995','Suzy'];
+console.log(studentDetails);
+
+
+const historyMarks = [10, 20, 30, 40, 50, 60, 70];   //length of array is 7 but index no. of array is 6 (index no. = length-1)
 console.log(historyMarks);
+
 const fruits = ["Apple", "Banana", "Mango"];
-console.log(fruits);
+console.log(fruits);   
+ 
+let cars= ["BMW","Tesla","Audi"];
+console.log(cars.length);
+
+//DIFFERENT WAYS TO CREATE AN ARRAY
+// ** First one is using Square branckets that we used above
+// Another one is to use Array() constructor. e.g:
+const arr= new Array('Ram','Rahul','Sonam');
+console.log(arr);
+
+//**ACESSING ARRAYS */
+
+const cadetNames=['Lakshman', 'Surya', 'Ojas'];
+console.log(cadetNames[2]);   //Acessing using square brackets and inside square brackets write index no. of the particular element that we want to print
+
+const marks=[10,20,30,40,50,60,70,80];
+console.log(marks[2]);
+marks[2]=10;     // We can also modify any data in array using index number like this
+                // and if we again console out after making this change, we will get another output which we modified
+console.log(marks[2]);
