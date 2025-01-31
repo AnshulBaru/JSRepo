@@ -613,3 +613,45 @@ console.log(marks[2]);
 marks[2]=10;     // We can also modify any data in array using index number like this
                 // and if we again console out after making this change, we will get another output which we modified
 console.log(marks[2]);
+
+//**ARRAY METHODS **/
+
+const cities=["Mumbai", "Delhi", "Calcutta", "Jaipur","Chennai"]; 
+console.log(cities.length);
+cities[2]='Kolkata'
+console.log(cities);
+
+//** Adding an Element */
+
+//push
+const teams =["CSK", "RCB", "MI", "LSG"];
+teams.push("GI");
+console.log(teams);    //push will only add the elements to the end of the array
+
+//unshift
+teams.unshift("KKR");
+console.log(teams);   //unshift will add at the starting of the array 
+
+//**  Removing  an element */
+
+//pop
+teams.pop();              // pop will remove the elements from the end of the array
+teams.pop();            // if we agian write pop it will remove another element from the end of the array.
+
+console.log(teams);  
+
+
+//shift
+teams.shift();        // shift will remove the element for the start of array
+console.log(teams);   
+
+
+//**  Check the element is present or not  */
+//indexOf()
+//includes()
+
+//slice() and splice()
+//concat
+
+
+
