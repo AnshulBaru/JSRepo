@@ -647,10 +647,26 @@ console.log(teams);
 
 
 //**  Check the element is present or not  */
-//indexOf()
-//includes()
 
-//slice() and splice()
+//indexOf()                            
+teams.indexOf("RCB");
+const RCBIndex = teams.indexOf('RCB');
+console.log(RCBIndex);
+const GTIndex = teams.indexOf('GT');
+console.log(GTIndex);          //GT is not present in the array and any element which is not present in the array, it will return us -1
+                              
+//includes()                // includes() will aso tell the element is present or not but it will return boolean value
+
+const RCBIncludes =teams.includes('RCB');
+console.log(RCBIncludes);
+
+//slice() and splice()\
+console.log(teams);
+console.log (teams.slice(2));  // it will remove starting 2 elements from the array
+console.log(teams);
+
+
+
 //concat
 
 
