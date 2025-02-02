@@ -584,7 +584,7 @@ console.log(commonDigits(74847, 781));
 console.log(commonDigits(11234, 11455))
 
 //** ARRAYS IN JS */
-const studentDetails=['Alex','1995','Suzy'];
+const studentDetails = ['Alex', '1995', 'Suzy'];
 console.log(studentDetails);
 
 
@@ -592,39 +592,39 @@ const historyMarks = [10, 20, 30, 40, 50, 60, 70];   //length of array is 7 but 
 console.log(historyMarks);
 
 const fruits = ["Apple", "Banana", "Mango"];
-console.log(fruits);   
- 
-let cars= ["BMW","Tesla","Audi"];
+console.log(fruits);
+
+let cars = ["BMW", "Tesla", "Audi"];
 console.log(cars.length);
 
 //DIFFERENT WAYS TO CREATE AN ARRAY
 // ** First one is using Square branckets that we used above
 // Another one is to use Array() constructor. e.g:
-const arr= new Array('Ram','Rahul','Sonam');
+const arr = new Array('Ram', 'Rahul', 'Sonam');
 console.log(arr);
 
 //**ACESSING ARRAYS */
 
-const cadetNames=['Lakshman', 'Surya', 'Ojas'];
+const cadetNames = ['Lakshman', 'Surya', 'Ojas'];
 console.log(cadetNames[2]);   //Acessing using square brackets and inside square brackets write index no. of the particular element that we want to print
 
-const marks=[10,20,30,40,50,60,70,80];
+const marks = [10, 20, 30, 40, 50, 60, 70, 80];
 console.log(marks[2]);
-marks[2]=10;     // We can also modify any data in array using index number like this
-                // and if we again console out after making this change, we will get another output which we modified
+marks[2] = 10;     // We can also modify any data in array using index number like this
+// and if we again console out after making this change, we will get another output which we modified
 console.log(marks[2]);
 
 //**ARRAY METHODS **/
 
-const cities=["Mumbai", "Delhi", "Calcutta", "Jaipur","Chennai"]; 
+const cities = ["Mumbai", "Delhi", "Calcutta", "Jaipur", "Chennai"];
 console.log(cities.length);
-cities[2]='Kolkata'
+cities[2] = 'Kolkata'
 console.log(cities);
 
 //** Adding an Element */
 
 //push
-const teams =["CSK", "RCB", "MI", "LSG"];
+const teams = ["CSK", "RCB", "MI", "LSG"];
 teams.push("GI");
 console.log(teams);    //push will only add the elements to the end of the array
 
@@ -638,12 +638,12 @@ console.log(teams);   //unshift will add at the starting of the array
 teams.pop();              // pop will remove the elements from the end of the array
 teams.pop();            // if we agian write pop it will remove another element from the end of the array.
 
-console.log(teams);  
+console.log(teams);
 
 
 //shift
 teams.shift();        // shift will remove the element for the start of array
-console.log(teams);   
+console.log(teams);
 
 
 //**  Check the element is present or not  */
@@ -654,20 +654,28 @@ const RCBIndex = teams.indexOf('RCB');
 console.log(RCBIndex);
 const GTIndex = teams.indexOf('GT');
 console.log(GTIndex);          //GT is not present in the array and any element which is not present in the array, it will return us -1
-                              
+
 //includes()                // includes() will aso tell the element is present or not but it will return boolean value
 
-const RCBIncludes =teams.includes('RCB');
+const RCBIncludes = teams.includes('RCB');
 console.log(RCBIncludes);
 
 //slice() and splice()\
+
+console.log(teams.slice(2));  // it will remove starting 2 elements from the array.. it creates the copy of original array 
+console.log(teams.slice(-1));// it will retain the last element of the array and other elements will be eliminated.
+
+teams.splice(2, 0, "GT", "LSG");   //2 is index no. , 0 is delete count,  and third one "GT" is what ever we want to add, and
+// we can add another element
 console.log(teams);
-console.log (teams.slice(2));  // it will remove starting 2 elements from the array
-console.log(teams);
 
+//**concat
+  //combine two or more arrays
+const city1=["Jaipur", "Mumbai"];
+const city2=["Bangluru", "Pune"];
+const mergeCity= city1.concat(city2);
+console.log(mergeCity);
 
-
-//concat
 
 
 
