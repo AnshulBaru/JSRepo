@@ -677,17 +677,30 @@ const mergeCity= city1.concat(city2);
 console.log(mergeCity);
 
 
-/** LOOPS OVER ARRAYS */
+/**   LOOPS OVER ARRAYS   */
 
 const Students=[
   'Tina',
   'Raj',
   'Bobby',
-  'Seeema',
+  'See ma',
   'Alex',
   'Sita'
 ];
 
-for(let i=0; i<Students.length; i++ ){
-  console.log(`Roll No ${i+1}: ${Students[i]}`);
+//**for loop:  */
+
+// for(let i=0; i<Students.length; i++ ){
+//   console.log(`Roll No ${i+1}: ${Students[i]}`);
+// }
+
+
+// for .. in loop:
+for (let i in Students){
+  console.log(`Roll No ${Number(i)+1}: ${Students[i]}`);   // type conversin is also done in this step to convert string to number
+}
+
+// for ..of loop:
+for (let student of Students){
+  console.log(student);
 }
