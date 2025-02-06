@@ -704,3 +704,16 @@ for (let i in Students){
 for (let student of Students){
   console.log(student);
 }
+
+//** SPREAD AND REST OPERATOR  */
+const aprilBatch =['Tina', 'Madhur'];
+const mayBatch= ['Ritik', 'Deepak', 'Shalini'];
+const juneBatch= ['Saba', 'Shivani'];
+const julyBatch= [];
+
+function addStudent(batch, student){
+  batch.push(student);
+  console.log(batch);
+}
+addStudent(aprilBatch, 'Ritu');
+addStudent(mayBatch, 'Sunny');
