@@ -670,16 +670,16 @@ teams.splice(2, 0, "GT", "LSG");   //2 is index no. , 0 is delete count,  and th
 console.log(teams);
 
 //**concat
-  //combine two or more arrays
-const city1=["Jaipur", "Mumbai"];
-const city2=["Bangluru", "Pune"];
-const mergeCity= city1.concat(city2);
+//combine two or more arrays
+const city1 = ["Jaipur", "Mumbai"];
+const city2 = ["Bangluru", "Pune"];
+const mergeCity = city1.concat(city2);
 console.log(mergeCity);
 
 
 /**   LOOPS OVER ARRAYS   */
 
-const Students=[
+const Students = [
   'Tina',
   'Raj',
   'Bobby',
@@ -696,24 +696,36 @@ const Students=[
 
 
 // for .. in loop:
-for (let i in Students){
-  console.log(`Roll No ${Number(i)+1}: ${Students[i]}`);   // type conversin is also done in this step to convert string to number
+for (let i in Students) {
+  console.log(`Roll No ${Number(i) + 1}: ${Students[i]}`);   // type conversin is also done in this step to convert string to number
 }
 
 // for ..of loop:
-for (let student of Students){
+for (let student of Students) {
   console.log(student);
 }
 
 //** SPREAD AND REST OPERATOR  */
-const aprilBatch =['Tina', 'Madhur'];
-const mayBatch= ['Ritik', 'Deepak', 'Shalini'];
-const juneBatch= ['Saba', 'Shivani'];
-const julyBatch= [];
+const aprilBatch = ['Tina', 'Madhur'];
+const mayBatch = ['Ritik', 'Deepak', 'Shalini'];
+const juneBatch = ['Saba', 'Shivani'];
+const julyBatch = [];
 
-function addStudent(batch, student){
-  batch.push(student);
+// function addStudent(batch, student){
+//   batch.push(student);
+//   console.log(batch);
+// }
+// addStudent(aprilBatch, 'Ritu');
+// addStudent(mayBatch, 'Sunny');
+
+//REST operator ...
+function addStudents(batch, ...students) {
+  for (let i of students) {
+    batch.push(i);
+  }
   console.log(batch);
 }
-addStudent(aprilBatch, 'Ritu');
-addStudent(mayBatch, 'Sunny');
+addStudents(aprilBatch, 'Sunny', 'Ritu', 'Sheena');
+
+//SPREAD OPERATOR:
+ 
