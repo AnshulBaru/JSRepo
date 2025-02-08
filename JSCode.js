@@ -728,4 +728,72 @@ function addStudents(batch, ...students) {
 addStudents(aprilBatch, 'Sunny', 'Ritu', 'Sheena');
 
 //SPREAD OPERATOR:
- 
+
+const newBatch = [...mayBatch];   //Shallow copy, which means the changes made to the original one will not effect tot he new one 
+//spread operator can be used to expand array and then copy it (expanding and copying, both work are done)
+//if we use spread operator  it will make a copy and don't make any change to newBatch
+console.log(newBatch);
+
+mayBatch.push("newStudent");
+console.log(mayBatch);
+console.log(newBatch);
+
+
+
+const arr3 = [...mayBatch, ...juneBatch];
+console.log(arr3);
+
+//**BREAK AND CONTINUE */
+
+//find first five even nos. and a new array to be created 
+const inputs = [11, 32, 12, 45, 65, 94, 7, 78, 10, 100, 131, 67, 81, 92, 53];
+const evenNumbers = [];
+
+for (let i of inputs) {   // this for will return all values of array
+  if (i % 2 !== 0) {      // (this is the condition) this will check whether values are even or not
+    continue;         // continue will skip all those iterations when odd numbers are coming   
+  }
+  evenNumbers.push(i);
+  if (evenNumbers.length === 5) {
+    break;
+  }
+  console.log(evenNumbers); // we will get 4 elements in the output because after using break the loop will be terminated
+  // so we will console.log out of the loop 
+}
+
+console.log(evenNumbers);
+
+// **Problem statement//:
+
+// You are tasked with creating a program that processes an array of positive integers. Your goal is to find the sum of all even numbers in the array, but you need to implement a special condition: if you encounter a number that is a multiple of 5, you should skip it and move on to the next element without including it in the sum.
+
+
+
+// Expected Input
+// [1,6,8,3,5,20,10]
+// Expected Output
+// 14
+
+
+// Test Cases
+// Find all the even elements in the array
+// Omit those elements which are divisible by 5
+// Sum all the elements which satisfy the given conditions
+// Return the sum
+const input = [1, 6, 8, 3, 5, 20, 10];
+function sumOfArray(arr) {
+    let sum = 0;
+    
+    for (let num of arr) {
+        if (num % 2 === 0 && num % 5 !== 0) { // Check if even and not divisible by 5
+            sum += num;     //means sum= sum+num
+        }
+    }
+    
+    return sum;
+}
+ answer = sumOfArray(input);
+// Test case
+
+console.log(answer); // Expected output: 14
+       
