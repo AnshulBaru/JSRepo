@@ -782,18 +782,25 @@ console.log(evenNumbers);
 // Return the sum
 const input = [1, 6, 8, 3, 5, 20, 10];
 function sumOfArray(arr) {
-    let sum = 0;
-    
-    for (let num of arr) {
-        if (num % 2 === 0 && num % 5 !== 0) { // Check if even and not divisible by 5
-            sum += num;     //means sum= sum+num
-        }
+  let sum = 0;
+
+  for (let num of arr) {
+    if (num % 2 === 0 && num % 5 !== 0) { // Check if even and not divisible by 5
+      sum += num;     //means sum= sum+num
     }
-    
-    return sum;
+  }
+
+  return sum;
 }
- answer = sumOfArray(input);
+answer = sumOfArray(input);
 // Test case
 
 console.log(answer); // Expected output: 14
-       
+
+/**STRING TRAVERSAL */
+
+let str = "JavaScript is an amazing language."
+
+for (let j = 0; j < str.length; j++) {
+  console.log(str.charAt(j));
+}
