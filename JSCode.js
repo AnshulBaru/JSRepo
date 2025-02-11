@@ -799,8 +799,26 @@ console.log(answer); // Expected output: 14
 
 /**STRING TRAVERSAL */
 
-let str = "JavaScript is an amazing language."
+// let str = "JavaScript is an amazing language."
 
-for (let j = 0; j < str.length; j++) {
-  console.log(str.charAt(j));
+// for (let i = 0; i < str.length; i++) {
+//   console.log(str.charAt(i));         //charAt will give us the character at the particular index no. 
+//   //The charAt() method in JavaScript is used to find and retrieve characters at specified indices (index nos.) in a string
+// }
+
+//Calculate the occurance of 'a' in the below stirng:
+function countChars(str, ch) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+   if(str.charAt(i) ===ch){
+    count++;
+   }
+
+
+  }
+console.log(`Occurrences of character ${ch} is: ${count}`);
 }
+let str = "JavaScript is an amazing language."
+let charToFind = 'a';
+
+countChars(str, charToFind)
