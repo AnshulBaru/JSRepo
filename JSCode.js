@@ -821,4 +821,4 @@ console.log(`Occurrences of character ${ch} is: ${count}`);
 let str = "JavaScript is an amazing language."
 let charToFind = 'a';
 
-countChars(str, charToFind)
+countChars(str, charToFind);
