@@ -683,7 +683,7 @@ const Students = [
   'Tina',
   'Raj',
   'Bobby',
-  'See ma',
+  'Seema',
   'Alex',
   'Sita'
 ];
@@ -822,3 +822,27 @@ let str = "JavaScript is an amazing language."
 let charToFind = 'a';
 
 countChars(str, charToFind);
+
+//METHODS IN STRINGS//
+
+let string = '  JavaScript is a Dynamically is  typed language.   ' ;
+
+ // includes()
+ console.log(string.includes('is'));
+
+ //replace()
+ console.log(string.replace("is", 'was'));
+
+ //replaceAll()
+console.log(string.replaceAll('is', 'was'));
+console.log(string.replaceAll('a', '@'));
+
+//trim()
+console.log(string.trim())
+
+
+//substring()
+
+//slice()
+
+//split()
