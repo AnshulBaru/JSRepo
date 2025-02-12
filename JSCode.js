@@ -810,13 +810,13 @@ console.log(answer); // Expected output: 14
 function countChars(str, ch) {
   let count = 0;
   for (let i = 0; i < str.length; i++) {
-   if(str.charAt(i) ===ch){
-    count++;
-   }
+    if (str.charAt(i) === ch) {
+      count++;
+    }
 
 
   }
-console.log(`Occurrences of character ${ch} is: ${count}`);
+  console.log(`Occurrences of character ${ch} is: ${count}`);
 }
 let str = "JavaScript is an amazing language."
 let charToFind = 'a';
@@ -825,24 +825,40 @@ countChars(str, charToFind);
 
 //METHODS IN STRINGS//
 
-let string = '  JavaScript is a Dynamically is  typed language.   ' ;
+let string = 'JavaScript is, a Dynamically, typed language.';
 
- // includes()
- console.log(string.includes('is'));
+// includes() :
+// includes returns true or false if a certain substring is included/present or not
 
- //replace()
- console.log(string.replace("is", 'was'));
+console.log(string.includes('is'));
 
- //replaceAll()
+//replace() :
+console.log(string.replace("is", 'was'));
+
+//replaceAll() :
 console.log(string.replaceAll('is', 'was'));
 console.log(string.replaceAll('a', '@'));
 
-//trim()
+//trim() :  //trim() will remove whitespace (spaces, tabs, and newlines) from both the beginning and the end of a string
 console.log(string.trim())
 
 
-//substring()
+//substring() :
+console.log(string.substring(3));   //cutting out everything before this index no.3
+console.log(string.substring(3, 10));   // get characters from index no.3 to index no.9... 10th index no. is excluded from substring
+console.log(string.substring(-4, -12));  // -ve value will be converted to 0 
 
-//slice()
 
-//split()
+//slice() :
+console.log(string.slice(3, 12)); // similar to substring but diffent when we give negative value
+console.log(string.slice(-3));   // will give last 3 characters 
+console.log(string.slice(-9, -3)); // will give from last 9th character till last 3rd character
+
+//split() :    // it will convert the string into an array
+//we have to tell on which token we want to split. Whether we want to split on space or comma or  explamation mark or any character.
+
+
+// let words = string.split(" ")  //where ever we find space it will split 
+let words = string.split(",")     //where ever we find comma it will split
+console.log(words);
+
