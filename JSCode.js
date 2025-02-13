@@ -862,3 +862,20 @@ console.log(string.slice(-9, -3)); // will give from last 9th character till las
 let words = string.split(",")     //where ever we find comma it will split
 console.log(words);
 
+
+/** OBJECTS IN JS  */
+const student = {
+  name: "Alexa",
+  age: 10,
+  hobby: "Dancing",
+  100 : "hundred",
+  show : function(){
+    console.log("This is the Student detail section");
+  }, 
+};
+console.log(student);
+
+console.log(student.hobby); // to access a particular key inside the Object we use dot notation (e.g student.hobby) or square notation(e.g student["name"]) 
+console.log(student['name']);
+console.log(student[100]);
+student.show();  //calling of function  
