@@ -880,6 +880,8 @@ console.log(student['name']);
 console.log(student[100]);
 student.show();  //calling of function  
 
-console.log(student);
+//WORKING OF JAVASCRIPT
+
+
 
 
