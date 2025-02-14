@@ -879,3 +879,7 @@ console.log(student.hobby); // to access a particular key inside the Object we u
 console.log(student['name']);
 console.log(student[100]);
 student.show();  //calling of function  
+
+console.log(student);
+
+
