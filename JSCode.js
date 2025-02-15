@@ -868,10 +868,10 @@ const student = {
   name: "Alexa",
   age: 10,
   hobby: "Dancing",
-  100 : "hundred",
-  show : function(){
+  100: "hundred",
+  show: function () {
     console.log("This is the Student detail section");
-  }, 
+  },
 };
 console.log(student);
 
@@ -879,9 +879,5 @@ console.log(student.hobby); // to access a particular key inside the Object we u
 console.log(student['name']);
 console.log(student[100]);
 student.show();  //calling of function  
-
-//WORKING OF JAVASCRIPT
-
-
 
 
