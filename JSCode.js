@@ -880,5 +880,5 @@ console.log(student['name']);
 console.log(student[100]);
 student.show();  //calling of function  
 
-
+//Execution context in JS
 
