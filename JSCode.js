@@ -881,4 +881,92 @@ console.log(student[100]);
 student.show();  //calling of function  
 
 //Execution context in JS
+// **Execution Context in JavaScript (Simplified)**
 
+// ### **1. What is Execution Context?**
+
+// - It is an environment where JavaScript code runs.
+// - Every time a function is called or the script runs, a new execution context is created.
+// - JavaScript has a **Global Execution Context (GEC)** and **Function Execution Contexts (FEC)**.
+
+// ---
+
+// ### **2. Components of Execution Context**
+
+// Each execution context has **three parts**:
+
+// 1. **Memory (Variable Environment)**
+//    - Stores variables and functions in memory before execution.
+// 2. **Code (Thread of Execution)**
+//    - Executes the code line by line.
+// 3. **Scope (Lexical Environment)**
+//    - Defines what variables/functions are accessible in a given context.
+
+// ---
+
+// ### **3. Phases of Execution Context**
+
+// It is created in **two phases**:
+
+// 1. **Creation Phase (Memory Allocation)**
+
+//    - JavaScript sets up memory for variables and functions.
+//    - Functions are stored with their full code.
+//    - Variables are stored as **undefined** initially (Hoisting).
+
+// 2. **Execution Phase (Code Runs)**
+
+//    - JavaScript executes code line by line.
+//    - Variables get assigned actual values.
+//    - Functions run when called.
+
+// ---
+
+// ### **4. Execution Context Stack (Call Stack)**
+
+// - JavaScript uses a **stack** to manage execution contexts.
+// - The **Global Execution Context (GEC)** is created first.
+// - Each function call creates a **new execution context** and is pushed onto the stack.
+// - When a function finishes, its execution context is **popped off** the stack.
+
+// ---
+
+// ### **5. Hoisting (Concept Related to Execution Context)**
+
+// - During the **Creation Phase**, JavaScript moves function declarations and variables to the top.
+// - **Function Declarations** are stored with full code.
+// - **Variables** are stored as **undefined** until assigned a value.
+
+// **Example:**
+
+// ```javascript
+// console.log(x); // undefined (Hoisted)
+// var x = 10;
+
+// hello(); // Works because function is hoisted
+// function hello() {
+//   console.log("Hello World!");
+// }
+// ```
+
+// ---
+
+// ### **6. Context in Execution Context**
+
+// - **Global Context** → Code that runs outside any function (window in browsers).
+// - **Function Context** → Code inside a function.
+// - **'this' Context** → Value of `this` depends on where the function is called (Global or Object).
+
+// ---
+
+// ### **Summary:**
+
+// - Execution Context is like a box where JS code runs.
+// - It has **Memory, Code, and Scope**.
+// - It runs in **Creation and Execution phases**.
+// - **Call Stack** manages function execution.
+// - **Hoisting** moves function declarations and variables to the top before execution.
+
+
+
+ 
