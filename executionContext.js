@@ -1,3 +1,6 @@
+console.log(`username: ${userName}`);
+console.log(`userAge: ${userAge}`);
+
 var userName = 'Tom';
 var userAge = 10;
 console.log(`username: ${userName}`);
