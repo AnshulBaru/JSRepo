@@ -1,6 +1,9 @@
 console.log(`username: ${userName}`);
 console.log(`userAge: ${userAge}`);
 
+greetUser(userName)
+
+
 var userName = 'Tom';
 var userAge = 10;
 console.log(`username: ${userName}`);
