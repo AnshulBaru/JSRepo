@@ -1,7 +1,26 @@
-console.log(`username: ${userName}`);
-console.log(`userAge: ${userAge}`);
+// console.log(`username: ${userName}`);
+// console.log(`userAge: ${userAge}`);
 
-greetUser(userName)
+// greetUser(userName)
+
+
+// var userName = 'Tom';
+// var userAge = 10;
+// console.log(`username: ${userName}`);
+// console.log(`userAge: ${userAge}`);
+
+// function greetUser(name) {
+//     var greet = 'I hope you are doing fine.';
+//     console.log(`hello ${name}, ${greet}`);
+//     var currentYear = 2030;
+//     const year = currentYear - userAge;
+//     return `Your birth year is ${year}`;
+// }
+// var birthYear = greetUser(userName);
+// console.log(birthYear);
+
+
+
 
 
 var userName = 'Tom';
@@ -9,13 +28,21 @@ var userAge = 10;
 console.log(`username: ${userName}`);
 console.log(`userAge: ${userAge}`);
 
+greetUser(userName);
+
 function greetUser(name) {
+    console.log(`***************************`)
     var greet = 'I hope you are doing fine.';
-    console.log(`hello ${name}, ${greet}`);
+    console.log(`Hello ${name}, ${greet}`);
     var currentYear = 2030;
-    const year = currentYear - userAge;
+    const year = birthYear(currentYear, userAge);
+    console.log(`******************************`);
     return `Your birth year is ${year}`;
 }
-var birthYear = greetUser(userName);
+function birthYear(year, age) {
+    console.log('Calculating the birth year');
+    return year - age;
+}
+var bYear = greetUser(userName);
 console.log(birthYear);
 
