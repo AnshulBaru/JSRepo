@@ -23,26 +23,46 @@
 
 
 
-var userName = 'Tom';
-var userAge = 10;
-console.log(`username: ${userName}`);
-console.log(`userAge: ${userAge}`);
+// var userName = 'Tom';
+// var userAge = 10;
+// console.log(`username: ${userName}`);
+// console.log(`userAge: ${userAge}`);
 
-greetUser(userName);
+// greetUser(userName);
 
-function greetUser(name) {
-    console.log(`***************************`)
-    var greet = 'I hope you are doing fine.';
-    console.log(`Hello ${name}, ${greet}`);
-    var currentYear = 2030;
-    const year = birthYear(currentYear, userAge);
-    console.log(`******************************`);
-    return `Your birth year is ${year}`;
+// function greetUser(name) {
+//     console.log(`***************************`)
+//     var greet = 'I hope you are doing fine.';
+//     console.log(`Hello ${name}, ${greet}`);
+//     var currentYear = 2030;
+//     const year = birthYear(currentYear, userAge);
+//     console.log(`******************************`);
+//     return `Your birth year is ${year}`;
+// }
+// function birthYear(year, age) {
+//     console.log('Calculating the birth year');
+//     return year - age;
+// }
+// var bYear = greetUser(userName);
+// console.log(birthYear);
+
+// function factorial (n){
+//     if(n === 0){
+//         return 1;
+//     }
+//     return n * factorial (n-1);
+// }
+// console.log(factorial(5));
+
+function foo (){
+    console.log("Hello from foo!");
 }
-function birthYear(year, age) {
-    console.log('Calculating the birth year');
-    return year - age;
+function bar(){
+    foo();
+    console.log("Hello from bar!");
 }
-var bYear = greetUser(userName);
-console.log(birthYear);
-
+function baz(){
+    bar();
+    console.log("Hello from baz!");
+}
+baz();
