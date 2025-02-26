@@ -89,6 +89,7 @@ function print() {
 console.log(varNum, letNum, constNum); //these variables which are in the global scope can be accessed anywhre in the code 
 
 print();
+console.log(varLocal, letLocal, constLocal);
 
 // function numbers(a,b,c){
     
