@@ -54,15 +54,57 @@
 // }
 // console.log(factorial(5));
 
-function foo (){
-    console.log("Hello from foo!");
+// function foo (){
+//     console.log("Hello from foo!");
+// }
+// function bar(){
+//     foo();
+//     console.log("Hello from bar!");
+// }
+// function baz(){
+//     bar();
+//     console.log("Hello from baz!");
+// }
+// baz();
+
+
+//********SCOPE IN JAVASCRIPT  */
+
+//GLOBAL
+//FUCNTION(LOCAL)
+//BLOCK
+var varNum = 10;
+let letNum = 20;
+const constNum = 30;
+
+function print() {
+    var varLocal = 50;
+    let letLocal = 60;
+    const constLocal = 70;
+    console.log(varLocal, letLocal, constLocal); // These variable inside the funciton are in fucnitonal/Local scope
+                                                  //They can not be accessed outside the the funciton or block.
+    console.log(varNum, letNum, constNum);
+   
 }
-function bar(){
-    foo();
-    console.log("Hello from bar!");
-}
-function baz(){
-    bar();
-    console.log("Hello from baz!");
-}
-baz();
+console.log(varNum, letNum, constNum); //these variables which are in the global scope can be accessed anywhre in the code 
+
+print();
+
+// function numbers(a,b,c){
+    
+    
+// return a+b+c;
+    
+    
+// }
+
+// console.log( numbers(1,2,3));
+
+
+
+
+
+
+
+
+
