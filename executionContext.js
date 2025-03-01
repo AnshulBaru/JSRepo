@@ -128,6 +128,11 @@ console.log(a,b,c);
 print();
 
 
+var w = "apple";
+const x = "mango";
+let z = 'banana';
+
+
 
 
 
