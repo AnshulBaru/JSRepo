@@ -128,11 +128,9 @@ console.log(a,b,c);
 print();
 
 
-var w = "apple";
-const x = "mango";
-let z = 'banana';
+// When a variable is declared in both the global scope and local scope, the variable in the local scope
+// takes precedence and shadows the one in the global scope. 
 
-
-
-
-
+//JavaScript lexical environment is a data structure with an identifier-variable mapping. Where identifier
+//  refers to the name of variables/functions and variable is the reference to the actual object. It also
+//  holds a reference to a parent lexical environment.
