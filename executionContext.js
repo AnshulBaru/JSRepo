@@ -103,30 +103,30 @@
 
 
 
-var a = 10;
-let b = 20;
-const c = 30;
+// var a = 10;
+// let b = 20;
+// const c = 30;
 
-function print() {
-    var a = 'ten';           //Lexical environment is the local memory         
-    let b = 'twenty';        // a and b is stored in this lexical environemt 
+// function print() {
+//     var a = 'ten';           //Lexical environment is the local memory         
+//     let b = 'twenty';        // a and b is stored in this lexical environemt 
    
 
-    console.log('****** Inside print Function *******');
-    console.log(a, b, c);  //
-    console.log('******* ******');
+//     console.log('****** Inside print Function *******');
+//     console.log(a, b, c);  //
+//     console.log('******* ******');
 
-    function innerPrint() {
-        var a = 'inner10';
-        console.log('*Inside innerPrint Function*');
-        console.log(a, b, c);
-    }
-    innerPrint();
+//     function innerPrint() {
+//         var a = 'inner10';
+//         console.log('*Inside innerPrint Function*');
+//         console.log(a, b, c);
+//     }
+//     innerPrint();
 
-}
+// }
 
-console.log(a, b, c);
-print();
+// console.log(a, b, c);
+// print();
 
 
 // When a variable is declared in both the global scope and local scope, the variable in the local scope
@@ -135,3 +135,22 @@ print();
 //JavaScript lexical environment is a data structure with an identifier-variable mapping. Where identifier
 //  refers to the name of variables/functions and variable is the reference to the actual object. It also
 //  holds a reference to a parent lexical environment.
+
+// let a = 10;
+
+// console.log(a);
+
+//STRICT MODE:
+
+'use strict';
+a =20;
+console.log(a);
+
+
+// 'use strict';
+// let value =10;
+
+// if (value){
+//   valeu=20;
+// }
+// console.log(value);
