@@ -108,9 +108,9 @@ let b = 20;
 const c = 30;
 
 function print() {
-    var a = 'ten';           //Lexical environment is the local memory          
+    var a = 'ten';           //Lexical environment is the local memory         
     let b = 'twenty';        // a and b is stored in this lexical environemt 
-
+   
 
     console.log('****** Inside print Function *******');
     console.log(a, b, c);  //
@@ -126,9 +126,12 @@ function print() {
 }
 
 console.log(a, b, c);
-print();   
+print();
 
 
 // When a variable is declared in both the global scope and local scope, the variable in the local scope
 // takes precedence and shadows the one in the global scope.
 
+//JavaScript lexical environment is a data structure with an identifier-variable mapping. Where identifier
+//  refers to the name of variables/functions and variable is the reference to the actual object. It also
+//  holds a reference to a parent lexical environment.
