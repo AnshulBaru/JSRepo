@@ -142,9 +142,9 @@
 
 //STRICT MODE:
 
-'use strict';
-a =20;
-console.log(a);
+// 'use strict';
+// a =20;
+// console.log(a);
 
 
 // 'use strict';
@@ -154,3 +154,15 @@ console.log(a);
 //   valeu=20;
 // }
 // console.log(value);
+
+var a= 10;
+let b = 20;
+ console.log(a,b);
+ 
+ var a= 55;
+ console.log(a);
+
+//  let b = 33;
+//  console.log(b);     // will give error because 'let' will not allow you to redeclare any variable
+
+
