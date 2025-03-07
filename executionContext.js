@@ -110,7 +110,7 @@
 // function print() {
 //     var a = 'ten';           //Lexical environment is the local memory         
 //     let b = 'twenty';        // a and b is stored in this lexical environemt 
-   
+
 
 //     console.log('****** Inside print Function *******');
 //     console.log(a, b, c);  //
@@ -155,14 +155,33 @@
 // }
 // console.log(value);
 
-var a= 10;
-let b = 20;
- console.log(a,b);
- 
- var a= 55;
- console.log(a);
+// var a= 10;
+// let b = 20;
+//  console.log(a,b);
+
+//  var a= 55;
+//  console.log(a);
 
 //  let b = 33;
 //  console.log(b);     // will give error because 'let' will not allow you to redeclare any variable
 
 
+//CLOSURES IN JAVASCRIPT :
+
+let a = 'Global';
+
+function outerPrint() {
+    let b = 'OuterPrint';
+
+    return function innerPrint() {
+        let c = 'innerPrint';
+        return `${a}  -> ${b} -> ${c}`;
+    }
+    // const show = innerPrint();     //calling function innerPrint() inside a variable 
+    // console.log(show);
+
+}
+const show = outerPrint();   // function 
+console.log(show);
+const printInner = show();   //
+console.log(printInner);
