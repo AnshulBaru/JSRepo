@@ -167,6 +167,16 @@
 
 
 //CLOSURES IN JAVASCRIPT :
+//example:
+
+
+
+
+
+
+
+
+
 
 let a = 'Global';
 
@@ -185,3 +195,4 @@ const show = outerPrint();   // function
 console.log(show);
 const printInner = show();   //
 console.log(printInner);
+
