@@ -41,23 +41,71 @@ console.log(prod(2, 4));
 })(5, 8);   //invoked by writing ()
 
 
-const user=(function(){
+const user = (function () {
 
-    const userData={
-        userName:"John",
-        userAge:20
+    const userData = {
+        userName: "John",
+        userAge: 20
     }
-function getName(){
-    console.log(userData.userName);
-}
+    function getName() {
+        console.log(userData.userName);
+    }
 
-function updateAge(age){
-    console.log(userData.userAge+age)
-}
-return {getName, updateAge} 
+    function updateAge(age) {
+        console.log(userData.userAge + age)
+    }
+    return { getName, updateAge }
 
-}) ();                       //We can only access what we return 
+})();                       //We can only access what we return 
 console.log(user);
 console.log(user.userData);  //as it is not returned so it will not be acessed outiside function
 user.getName();
 user.updateAge(3);
+
+//Example:
+function main() {
+    return (function () {
+        console.log("hello user")
+    })();
+}
+const result = main();
+
+//Example:
+var x = 10;
+(function () {
+    console.log(x);
+})();
+
+//Example:
+var counter = (function () {
+    var count = 0;
+    return {
+        increment: function () {
+            count++;
+        },
+        getCount: function () {
+            return count;
+        },
+    };
+})();
+counter.increment();
+counter.increment();
+console.log(counter.getCount());
+
+//**PURE FUNCTIONS**//:
+
+function calculate(num1, num2) {
+    return num1 * num2;
+}
+console.log(calculate(4, 6));
+
+
+//**IMPURE FUNCTION */
+const discount = 25;
+
+function calcDis(price) {
+    return price - discount;
+}
+console.log(calcDis(30))
+
+//**CALLBACK FUCNTIONS */
