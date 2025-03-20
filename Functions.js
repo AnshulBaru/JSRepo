@@ -108,4 +108,24 @@ function calcDis(price) {
 }
 console.log(calcDis(30))
 
-//**CALLBACK FUCNTIONS */
+//**CALLBACK FUCNTIONS */ : When we use function as a parameters , as a argument to pass inside a function
+
+function greet(wish){
+    console.log(`${wish()}, Welcome to the JavaScript`)
+}
+
+function sayHi(){
+    return "Hi!"
+}
+
+function sayHello(){
+    return "Hello";
+}
+
+function goodMorning(){
+    return "Good Morning";
+}
+
+greet(sayHi);
+greet(sayHello);
+greet(goodMorning);
