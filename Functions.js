@@ -110,22 +110,61 @@ console.log(calcDis(30))
 
 //**CALLBACK FUCNTIONS */ : When we use function as a parameters , as a argument to pass inside a function
 
-function greet(wish){
+function greet(wish) {
     console.log(`${wish()}, Welcome to the JavaScript`)
 }
 
-function sayHi(){
+function sayHi() {
     return "Hi!"
 }
 
-function sayHello(){
+function sayHello() {
     return "Hello";
 }
 
-function goodMorning(){
+function goodMorning() {
     return "Good Morning";
 }
 
 greet(sayHi);
 greet(sayHello);
 greet(goodMorning);
+
+
+
+/** Function returning function */
+
+function greet1(message) {
+    return function wish(wishes) {
+
+        console.log(`${wishes}, ${message}`)
+    }
+}
+
+// const greeting =greet1("I hope you are doing well");
+// console.log(greeting('Hello'));
+
+greet1("Welcome to the session")("Hello")
+
+
+/**HIGHER ORDER FUNCITON */
+
+const inputs = [2, 3, 4, 5, 6, 12, 1, 4, 16];
+
+function square(input) {
+    const squared = [];
+    for (let num of input) {
+        squared.push(num * num);
+    }
+    return squared;
+}
+
+function cubic(input) {
+    const cubes = [];
+    for (let num of input) {
+        cubes.push(num * num * num);
+    }
+    return cubes;
+}
+console.log(square(inputs));
+console.log(cubic(inputs));
