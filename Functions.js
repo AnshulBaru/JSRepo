@@ -151,20 +151,37 @@ greet1("Welcome to the session")("Hello")
 
 const inputs = [2, 3, 4, 5, 6, 12, 1, 4, 16];
 
-function square(input) {
-    const squared = [];
+// function square(input) {
+//     const squared = [];
+//     for (let num of input) {
+//         squared.push(num * num);
+//     }
+//     return squared;
+// }
+
+// function cubic(input) {
+//     const cubes = [];
+//     for (let num of input) {
+//         cubes.push(num * num * num);
+//     }
+//     return cubes;
+// }
+// console.log(square(inputs));
+// console.log(cubic(inputs));
+
+function operation(inputs, fn) {
+    const output = []
     for (let num of input) {
-        squared.push(num * num);
+        output.push(fn(num));
     }
-    return squared;
+    return output
 }
 
-function cubic(input) {
-    const cubes = [];
-    for (let num of input) {
-        cubes.push(num * num * num);
-    }
-    return cubes;
+function square(number) {
+    return number * number
 }
-console.log(square(inputs));
-console.log(cubic(inputs));
+function cube(number) {
+    return number * number * number
+}
+
+console.log(operation(inputs, square))
