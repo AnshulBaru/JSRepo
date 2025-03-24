@@ -189,3 +189,13 @@ console.log(operation(inputs, cube))
 
 /**CURRYING IN JS */
 
+function add(a,b,c){
+    return a+b+c;
+}
+function add(a){
+    return function(b){
+        return function(c){
+            return a+b+c;
+        };
+    };
+};
