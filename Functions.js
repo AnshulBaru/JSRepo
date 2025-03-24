@@ -169,7 +169,7 @@ const inputs = [2, 3, 4, 5, 6, 12, 1, 4, 16];
 // console.log(square(inputs));
 // console.log(cubic(inputs));
 
-function operation(inputs, fn) {
+function operation(input, fn) {
     const output = []
     for (let num of input) {
         output.push(fn(num));
@@ -185,3 +185,7 @@ function cube(number) {
 }
 
 console.log(operation(inputs, square))
+console.log(operation(inputs, cube))
+
+/**CURRYING IN JS */
+
