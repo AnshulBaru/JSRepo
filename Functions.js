@@ -189,13 +189,25 @@ console.log(operation(inputs, cube))
 
 /**CURRYING IN JS */
 
-function add(a,b,c){
-    return a+b+c;
-}
-function add(a){
+//Example1:
+function addCurried(a){
     return function(b){
-        return function(c){
-            return a+b+c;
-        };
+        return a+b;
     };
-};
+}
+console.log(addCurried(2)(3));
+
+//Example2:
+
+function multiply(a) {
+    return function (b) {
+      return a * b;
+    };
+  }
+  
+  console.log(multiply(3)(4)); // Output: 12
+  
+  const double = multiply(2); // Fixes 'a' as 2
+  console.log(double(5)); // Output: 10
+  console.log(double(10)); // Output: 20
+  
