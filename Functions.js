@@ -108,7 +108,8 @@ function calcDis(price) {
 }
 console.log(calcDis(30))
 
-//**CALLBACK FUCNTIONS */ : When we use function as a parameters , as a argument to pass inside a function
+//**CALLBACK FUCNTIONS */ : 
+//  A callback function is a function passed as an argument to another function, which gets executed later when needed.
 
 function greet(wish) {
     console.log(`${wish()}, Welcome to the JavaScript`)
@@ -187,12 +188,13 @@ function cube(number) {
 console.log(operation(inputs, square))
 console.log(operation(inputs, cube))
 
-/**CURRYING IN JS */
 
-//Example1:
-function addCurried(a){
-    return function(b){
-        return a+b;
+/**      CURRYING IN JS :              */
+
+//  Example1 of currying in Js:
+function addCurried(a) {
+    return function (b) {
+        return a + b;
     };
 }
 console.log(addCurried(2)(3));
@@ -201,13 +203,36 @@ console.log(addCurried(2)(3));
 
 function multiply(a) {
     return function (b) {
-      return a * b;
+        return a * b;
     };
-  }
-  
-  console.log(multiply(3)(4)); // Output: 12
-  
-  const double = multiply(2); // Fixes 'a' as 2
-  console.log(double(5)); // Output: 10
-  console.log(double(10)); // Output: 20
-  
+}
+
+console.log(multiply(3)(4)); // Output: 12
+
+const double = multiply(2); // Fixes 'a' as 2
+console.log(double(5)); // Output: 10
+console.log(double(10)); // Output: 20
+
+//Example3:
+
+// function power(a,b){
+//     return a**b;     // a**b means b raise to the power a
+// }
+//above example With currying:-
+
+function power(b) {
+    return function (a) {
+        return a ** b
+    }
+}
+const square1 = power(2);
+console.log(square1);
+
+console.log(square1(4));
+
+/**   ONE EXAMPLE USING ARROW FUNCTIONS   */
+
+const add = (apple) => (mango) => (banana) => apple + mango + banana;
+console.log(add(3)(5)(6));
+
+
