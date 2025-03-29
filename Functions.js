@@ -236,3 +236,4 @@ const add = (apple) => (mango) => (banana) => apple + mango + banana;
 console.log(add(3)(5)(6));
 
 
+
