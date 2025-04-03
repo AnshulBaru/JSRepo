@@ -237,6 +237,17 @@ console.log(add(3)(5)(6));
 
 
 
+// map() function in higher order functons:
+
+const inputs1 = [2, 3, 5, 6, 7];
+const squaredArrays = inputs1.map(function (currentElement, index) {
+    return currentElement * currentElement;
+
+}
+
+
+);
+console.log(squaredArrays);
 
 
 
