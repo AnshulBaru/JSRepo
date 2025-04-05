@@ -252,4 +252,11 @@ console.log(squaredArrays);
 
 
 
+// reduce() function in higer order functions
+
+
+const inputs2 = [2, 3, 4, 5, 6, 10];
+const sum3 = inputs2.reduce((total, num) => { return total + num }, 0)
+    ;
+
 
