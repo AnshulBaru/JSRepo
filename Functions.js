@@ -1,262 +1,278 @@
-/* FUNTIONS IN JS */
+// /* FUNTIONS IN JS */
 
 
-//Function Declaration
+// //Function Declaration
 
-function sum(a, b) {
-    return a + b;
-}
+// function sum(a, b) {
+//     return a + b;
+// }
 
-const sum1 = sum(5, 6);
-console.log(sum1);
+// const sum1 = sum(5, 6);
+// console.log(sum1);
 
-//Function expression:
-//Function expression means assigning a fucntion to a variable 
+// //Function expression:
+// //Function expression means assigning a fucntion to a variable 
 
-const sum2 = function (x, y) {              //no need to give name to a function here in function expression
-    return x + y;                      //so such functions which doesn't have name are called as anonymous functions
+// const sum2 = function (x, y) {              //no need to give name to a function here in function expression
+//     return x + y;                      //so such functions which doesn't have name are called as anonymous functions
 
-}
-console.log(sum2(1, 8));
-
-
-//ARROW FUNCTION
-
-var prod = (num1, num2) => {
-    return num1 * num2;
-};
-console.log(prod(3, 5));
-
-//We can also write the above arrow funciton like this:
-
-var prod2 = (num1, num2) => num1 * num2;   //We can omit function name as well as function keyword
-console.log(prod(2, 4));
+// }
+// console.log(sum2(1, 8));
 
 
+// //ARROW FUNCTION
 
-// IIFE (Immediately Invoked Funcion Expression)
-//Syntax:
-(function (l, m) {
-    console.log(l * m)
-})(5, 8);   //invoked by writing ()
+// var prod = (num1, num2) => {
+//     return num1 * num2;
+// };
+// console.log(prod(3, 5));
 
+// //We can also write the above arrow funciton like this:
 
-const user = (function () {
-
-    const userData = {
-        userName: "John",
-        userAge: 20
-    }
-    function getName() {
-        console.log(userData.userName);
-    }
-
-    function updateAge(age) {
-        console.log(userData.userAge + age)
-    }
-    return { getName, updateAge }
-
-})();                       //We can only access what we return 
-console.log(user);
-console.log(user.userData);  //as it is not returned so it will not be acessed outiside function
-user.getName();
-user.updateAge(3);
-
-//Example:
-function main() {
-    return (function () {
-        console.log("hello user")
-    })();
-}
-const result = main();
-
-//Example:
-var x = 10;
-(function () {
-    console.log(x);
-})();
-
-//Example:
-var counter = (function () {
-    var count = 0;
-    return {
-        increment: function () {
-            count++;
-        },
-        getCount: function () {
-            return count;
-        },
-    };
-})();
-counter.increment();
-counter.increment();
-console.log(counter.getCount());
-
-//**PURE FUNCTIONS**//:
-
-function calculate(num1, num2) {
-    return num1 * num2;
-}
-console.log(calculate(4, 6));
-
-
-//**IMPURE FUNCTION */
-const discount = 25;
-
-function calcDis(price) {
-    return price - discount;
-}
-console.log(calcDis(30))
-
-//**CALLBACK FUCNTIONS */ : 
-//  A callback function is a function passed as an argument to another function, which gets executed later when needed.
-
-function greet(wish) {
-    console.log(`${wish()}, Welcome to the JavaScript`)
-}
-
-function sayHi() {
-    return "Hi!"
-}
-
-function sayHello() {
-    return "Hello";
-}
-
-function goodMorning() {
-    return "Good Morning";
-}
-
-greet(sayHi);
-greet(sayHello);
-greet(goodMorning);
+// var prod2 = (num1, num2) => num1 * num2;   //We can omit function name as well as function keyword
+// console.log(prod(2, 4));
 
 
 
-/** Function returning function */
-
-function greet1(message) {
-    return function wish(wishes) {
-
-        console.log(`${wishes}, ${message}`)
-    }
-}
-
-// const greeting =greet1("I hope you are doing well");
-// console.log(greeting('Hello'));
-
-greet1("Welcome to the session")("Hello")
+// // IIFE (Immediately Invoked Funcion Expression)
+// //Syntax:
+// (function (l, m) {
+//     console.log(l * m)
+// })(5, 8);   //invoked by writing ()
 
 
-/**HIGHER ORDER FUNCITON */
+// const user = (function () {
 
-const inputs = [2, 3, 4, 5, 6, 12, 1, 4, 16];
-
-// function square(input) {
-//     const squared = [];
-//     for (let num of input) {
-//         squared.push(num * num);
+//     const userData = {
+//         userName: "John",
+//         userAge: 20
 //     }
-//     return squared;
-// }
-
-// function cubic(input) {
-//     const cubes = [];
-//     for (let num of input) {
-//         cubes.push(num * num * num);
+//     function getName() {
+//         console.log(userData.userName);
 //     }
-//     return cubes;
+
+//     function updateAge(age) {
+//         console.log(userData.userAge + age)
+//     }
+//     return { getName, updateAge }
+
+// })();                       //We can only access what we return 
+// console.log(user);
+// console.log(user.userData);  //as it is not returned so it will not be acessed outiside function
+// user.getName();
+// user.updateAge(3);
+
+// //Example:
+// function main() {
+//     return (function () {
+//         console.log("hello user")
+//     })();
 // }
-// console.log(square(inputs));
-// console.log(cubic(inputs));
+// const result = main();
 
-function operation(input, fn) {
-    const output = []
-    for (let num of input) {
-        output.push(fn(num));
-    }
-    return output
-}
+// //Example:
+// var x = 10;
+// (function () {
+//     console.log(x);
+// })();
 
-function square(number) {
-    return number * number
-}
-function cube(number) {
-    return number * number * number
-}
+// //Example:
+// var counter = (function () {
+//     var count = 0;
+//     return {
+//         increment: function () {
+//             count++;
+//         },
+//         getCount: function () {
+//             return count;
+//         },
+//     };
+// })();
+// counter.increment();
+// counter.increment();
+// console.log(counter.getCount());
 
-console.log(operation(inputs, square))
-console.log(operation(inputs, cube))
+// //**PURE FUNCTIONS**//:
 
-
-/**      CURRYING IN JS :              */
-
-//  Example1 of currying in Js:
-function addCurried(a) {
-    return function (b) {
-        return a + b;
-    };
-}
-console.log(addCurried(2)(3));
-
-//Example2:
-
-function multiply(a) {
-    return function (b) {
-        return a * b;
-    };
-}
-
-console.log(multiply(3)(4)); // Output: 12
-
-const double = multiply(2); // Fixes 'a' as 2
-console.log(double(5)); // Output: 10
-console.log(double(10)); // Output: 20
-
-//Example3:
-
-// function power(a,b){
-//     return a**b;     // a**b means b raise to the power a
+// function calculate(num1, num2) {
+//     return num1 * num2;
 // }
-//above example With currying:-
-
-function power(b) {
-    return function (a) {
-        return a ** b
-    }
-}
-const square1 = power(2);
-console.log(square1);
-
-console.log(square1(4));
-
-/**   ONE EXAMPLE USING ARROW FUNCTIONS   */
-
-const add = (apple) => (mango) => (banana) => apple + mango + banana;
-console.log(add(3)(5)(6));
+// console.log(calculate(4, 6));
 
 
+// //**IMPURE FUNCTION */
+// const discount = 25;
 
-// map() function in higher order functons:
+// function calcDis(price) {
+//     return price - discount;
+// }
+// console.log(calcDis(30))
 
-const inputs1 = [2, 3, 5, 6, 7];
-const squaredArrays = inputs1.map(function (currentElement, index) {
-    return currentElement * currentElement;
+// //**CALLBACK FUCNTIONS */ : 
+// //  A callback function is a function passed as an argument to another function, which gets executed later when needed.
 
-}
+// function greet(wish) {
+//     console.log(`${wish()}, Welcome to the JavaScript`)
+// }
+
+// function sayHi() {
+//     return "Hi!"
+// }
+
+// function sayHello() {
+//     return "Hello";
+// }
+
+// function goodMorning() {
+//     return "Good Morning";
+// }
+
+// greet(sayHi);
+// greet(sayHello);
+// greet(goodMorning);
 
 
-);
-console.log(squaredArrays);
+
+// /** Function returning function */
+
+// function greet1(message) {
+//     return function wish(wishes) {
+
+//         console.log(`${wishes}, ${message}`)
+//     }
+// }
+
+// // const greeting =greet1("I hope you are doing well");
+// // console.log(greeting('Hello'));
+
+// greet1("Welcome to the session")("Hello")
+
+
+// /**HIGHER ORDER FUNCITON */
+
+// const inputs = [2, 3, 4, 5, 6, 12, 1, 4, 16];
+
+// // function square(input) {
+// //     const squared = [];
+// //     for (let num of input) {
+// //         squared.push(num * num);
+// //     }
+// //     return squared;
+// // }
+
+// // function cubic(input) {
+// //     const cubes = [];
+// //     for (let num of input) {
+// //         cubes.push(num * num * num);
+// //     }
+// //     return cubes;
+// // }
+// // console.log(square(inputs));
+// // console.log(cubic(inputs));
+
+// function operation(input, fn) {
+//     const output = []
+//     for (let num of input) {
+//         output.push(fn(num));
+//     }
+//     return output
+// }
+
+// function square(number) {
+//     return number * number
+// }
+// function cube(number) {
+//     return number * number * number
+// }
+
+// console.log(operation(inputs, square))
+// console.log(operation(inputs, cube))
+
+
+// /**      CURRYING IN JS :              */
+
+// //  Example1 of currying in Js:
+// function addCurried(a) {
+//     return function (b) {
+//         return a + b;
+//     };
+// }
+// console.log(addCurried(2)(3));
+
+// //Example2:
+
+// function multiply(a) {
+//     return function (b) {
+//         return a * b;
+//     };
+// }
+
+// console.log(multiply(3)(4)); // Output: 12
+
+// const double = multiply(2); // Fixes 'a' as 2
+// console.log(double(5)); // Output: 10
+// console.log(double(10)); // Output: 20
+
+// //Example3:
+
+// // function power(a,b){
+// //     return a**b;     // a**b means b raise to the power a
+// // }
+// //above example With currying:-
+
+// function power(b) {
+//     return function (a) {
+//         return a ** b
+//     }
+// }
+// const square1 = power(2);
+// console.log(square1);
+
+// console.log(square1(4));
+
+// /**   ONE EXAMPLE USING ARROW FUNCTIONS   */
+
+// const add = (apple) => (mango) => (banana) => apple + mango + banana;
+// console.log(add(3)(5)(6));
 
 
 
+// // map() function in higher order functons:
 
-// reduce() function in higer order functions
+// const inputs1 = [2, 3, 5, 6, 7];
+// const squaredArrays = inputs1.map(function (currentElement, index) {
+//     return currentElement * currentElement;
+
+// }
 
 
-const inputs2 = [2, 3, 4, 5, 6, 10];
-const sum3 = inputs2.reduce((total, num) => { return total + num }, 0)
-    ;
+// );
+// console.log(squaredArrays);
 
+
+//Example of .map()
+// let numbers = [1,2,3,4,5];
+// function doubleNumbers(num){
+//     return num*2;
+// }
+// let doubledNumbers =numbers.map(doubleNumbers);
+// console.log(doubledNumbers);
+
+//Same example using arrow function:
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// const doubleNumbers = num => num * 2;
+// let doubledNumbers = numbers.map(doubleNumbers);
+// console.log(doubledNumbers);
+
+
+// reduce() function:
+
+const number = [1, 2, 3, 4, 5];
+const sum = number.reduce(function (accumulator, currentValue) {
+    return accumulator + currentValue;
+
+}, 0);
+console.log(sum);
 
