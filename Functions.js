@@ -269,10 +269,16 @@
 
 // reduce() function:
 
-const number = [1, 2, 3, 4, 5];
-const sum = number.reduce(function (accumulator, currentValue) {
-    return accumulator + currentValue;
+// const number = [1, 2, 3, 4, 5];
+// const sum = number.reduce(function (accumulator, currentValue) {
+//     return accumulator + currentValue;
 
-}, 0);
+// }, 0);
+// console.log(sum);
+
+//Same example using arrow funciton:
+ 
+const number=[1,2,3,4,5];
+const sum=number.reduce((accumulator, currentValue)=> accumulator+ currentValue,0);
+
 console.log(sum);
-
