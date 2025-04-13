@@ -277,10 +277,39 @@
 // console.log(sum);
 
 //Same example using arrow funciton:
- 
-const number=[1,2,3,4,5];
-const sum=number.reduce((accumulator, currentValue)=> accumulator+ currentValue,0);
+
+const number = [1, 2, 3, 4, 5];
+const sum = number.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
 console.log(sum);
 
-//Example2
+
+
+//filter() function: 
+
+//Example1:
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(`Even numbers: ${evenNumbers}`);
+// if we want only array output:
+console.log(evenNumbers);
+
+
+
+
+
+//Example2:
+
+
+const inputs = [2, 19, -23, 33, -45];
+// const positives = inputs.filter(noNegative);
+// function noNegative(num) {
+//     return num > 0;
+// }
+// console.log(`Original Array: ${inputs}`)
+// console.log(`Only Positive Numbers: ${positives} `);
+
+
+
+const negatives = inputs.filter(inp => inp < 0);
+console.log(`NegativeNumbers:${negatives}`);
