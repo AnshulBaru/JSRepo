@@ -313,3 +313,5 @@ const inputs = [2, 19, -23, 33, -45];
 
 const negatives = inputs.filter(inp => inp < 0);
 console.log(`NegativeNumbers:${negatives}`);
+
+
