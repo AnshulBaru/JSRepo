@@ -315,3 +315,9 @@ const negatives = inputs.filter(inp => inp < 0);
 console.log(`NegativeNumbers:${negatives}`);
 
 
+//find() function
+
+const inputs1=[22,13,15,17,65,98,76,44,55];
+
+const find1=inputs1.find((num)=> num==65  )
+console.log(find1);
