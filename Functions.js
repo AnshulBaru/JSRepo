@@ -317,12 +317,25 @@ console.log(`NegativeNumbers:${negatives}`);
 
 //find() function
 
-const inputs1=[22,13,15,17,65,98,76,44,55];
+// const inputs1=[22,13,15,17,65,98,76,44,55];
 
-const find1=inputs1.find((num)=> num==65  )
+// const find1=inputs1.find((num)=> num==65  )
+// console.log(find1);
+
+
+// const inputs2=[2,4,5,6,7];
+// const find2=inputs2.find(num=>num==5)
+// console.log(find2);
+
+
+
+const inputs1 = [22, 13, 15, 17, 65, 98, 76, 44, 55];
+
+const find1 = inputs1.findIndex((num) => num == 65)
 console.log(find1);
 
 
-const inputs2=[2,4,5,6,7];
-const find2=inputs2.find(num=>num==5)
+const inputs2 = [2, 4, 5, 6, 7];
+const find2 = inputs2.findIndex(num => num == 5)
 console.log(find2);
+
