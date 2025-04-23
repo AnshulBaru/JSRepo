@@ -278,21 +278,21 @@
 
 //Same example using arrow funciton:
 
-const number = [1, 2, 3, 4, 5];
-const sum = number.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+// const number = [1, 2, 3, 4, 5];
+// const sum = number.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
-console.log(sum);
+// console.log(sum);
 
 
 
 //filter() function: 
 
 //Example1:
-const numbers = [1, 2, 3, 4, 5];
-const evenNumbers = numbers.filter(num => num % 2 === 0);
-console.log(`Even numbers: ${evenNumbers}`);
-// if we want only array output:
-console.log(evenNumbers);
+// const numbers = [1, 2, 3, 4, 5];
+// const evenNumbers = numbers.filter(num => num % 2 === 0);
+// console.log(`Even numbers: ${evenNumbers}`);
+// // if we want only array output:
+// console.log(evenNumbers);
 
 
 
@@ -301,7 +301,7 @@ console.log(evenNumbers);
 //Example2:
 
 
-const inputs = [2, 19, -23, 33, -45];
+// const inputs = [2, 19, -23, 33, -45];
 // const positives = inputs.filter(noNegative);
 // function noNegative(num) {
 //     return num > 0;
@@ -311,8 +311,8 @@ const inputs = [2, 19, -23, 33, -45];
 
 
 
-const negatives = inputs.filter(inp => inp < 0);
-console.log(`NegativeNumbers:${negatives}`);
+// const negatives = inputs.filter(inp => inp < 0);
+// console.log(`NegativeNumbers:${negatives}`);
 
 
 //find() function
@@ -329,13 +329,45 @@ console.log(`NegativeNumbers:${negatives}`);
 
 
 
-const inputs1 = [22, 13, 15, 17, 65, 98, 76, 44, 55];
+// const inputs1 = [22, 13, 15, 17, 65, 98, 76, 44, 55];
 
-const find1 = inputs1.findIndex((num) => num == 65)
-console.log(find1);
+// const find1 = inputs1.findIndex(num => num = 65)
+// console.log(find1);
 
 
-const inputs2 = [2, 4, 5, 6, 7];
-const find2 = inputs2.findIndex(num => num == 5)
-console.log(find2);
+// const inputs2 = [2, 4, 5, 6, 7];
+// const find2 = inputs2.findIndex(num => num == 5)
+// console.log(find2);
 
+
+// this() keyword: 
+
+
+console.log(this);
+
+
+function checkThis() {
+    console.log(this.user);
+}
+
+checkThis();
+
+const user1 = {
+    userName: "John",
+    userAge: 12,
+    work: function () {
+        console.log(this);
+    }
+}
+
+user1.work();
+
+const user2 = {
+
+    userName: "Harry",
+
+};
+user2.work = user1.work;
+console.log(user2);
+
+user2.work();
