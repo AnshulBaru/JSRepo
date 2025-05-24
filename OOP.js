@@ -44,3 +44,17 @@ movie.getDetails();
 
 const detail = "year";
 movie.getMovieDetails(detail);
+
+
+//Construction function:
+
+const movieObj={
+    title: 'The Avengers',
+    year: 2012,
+    getDetails(){
+        console.log(`
+            Title:${this.title}
+            Year: ${this.year}`);
+    
+        },
+};

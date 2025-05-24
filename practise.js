@@ -32,3 +32,4 @@ const students ={
 };
 
 console.log(students.School.SchoolName);
+
