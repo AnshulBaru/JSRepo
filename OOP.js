@@ -46,9 +46,9 @@
 // movie.getMovieDetails(detail);
 
 
-//Construction function:
 
 
+//Factory Function:
 
 function movie(title, year) {
 
@@ -63,7 +63,16 @@ function movie(title, year) {
 
         },
     };
-
-
-    
+    return movieObj;
 }
+
+const movie1 = movie("The Avengers", 2012);
+console.log(movie1)
+movie1.getDetails();
+
+const movie2 = movie("Spiderman", 2010);
+console.log(movie2)
+movie2.getDetails();
+
+//Construction Function:
+
