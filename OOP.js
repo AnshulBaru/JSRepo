@@ -70,9 +70,24 @@ const movie1 = movie("The Avengers", 2012);
 console.log(movie1)
 movie1.getDetails();
 
-const movie2 = movie("Spiderman", 2010);
-console.log(movie2)
-movie2.getDetails();
 
-//Construction Function:
+//Constructor Function:
 
+function Movie(title, year) {
+
+    this.title = title;
+    this.year = year;
+
+    this.getDetails = function () {
+        console.log(`
+            Title:${this.title}
+            Year: ${this.year}
+             `);
+
+    };
+}
+//To invoke the above function we use "new" keyword
+
+const movie2=new Movie('Avatar', 2030);
+console.log(movie2);
+movie2.getDetails;
