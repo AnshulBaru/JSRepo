@@ -88,6 +88,19 @@ function Movie(title, year) {
 }
 //To invoke the above function we use "new" keyword
 
-const movie2=new Movie('Avatar', 2030);
+const movie2 = new Movie('Avatar', 2030);
 console.log(movie2);
-movie2.getDetails;
+
+
+//Another example
+function Student(className, rollNumber) {
+    this.className = className
+        this.rollNumber = rollNumber
+}
+
+const Ram = new Student("10th", 25);
+const Suraj = new Student("12th", 11);
+
+console.log(Ram);
+console.log(Suraj);
+console.log(Ram.rollNumber);
