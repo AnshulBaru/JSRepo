@@ -95,7 +95,7 @@ console.log(movie2);
 //Another example
 function Student(className, rollNumber) {
     this.className = className
-        this.rollNumber = rollNumber
+    this.rollNumber = rollNumber
 }
 
 const Ram = new Student("10th", 25);
@@ -104,3 +104,4 @@ const Suraj = new Student("12th", 11);
 console.log(Ram);
 console.log(Suraj);
 console.log(Ram.rollNumber);
+
