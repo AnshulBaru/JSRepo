@@ -105,3 +105,10 @@ console.log(Ram);
 console.log(Suraj);
 console.log(Ram.rollNumber);
 
+//Prototype
+
+
+
+
+
+
