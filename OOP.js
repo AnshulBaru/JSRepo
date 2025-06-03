@@ -108,7 +108,13 @@ console.log(Ram.rollNumber);
 //Prototype
 
 
+function Film(title){
+    this.title=title;
+}
+const film1=new Film('IronMan');
+ film1.year=2025;
+ console.log(film1);
 
-
+ console.log(film1.__proto__)
 
 
