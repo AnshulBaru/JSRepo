@@ -118,3 +118,11 @@ const film1=new Film('IronMan');
  console.log(film1.__proto__)
 
 
+//Example
+function Game(name, platform){
+    this.name=name;
+    this.platform=platform;
+}
+const fifa= new Game("FIFA 23", "PlayStation");
+console.log(fifa.__proto__===Game.prototype);
+console.log(fifa.__proto__===Object.prototype);
