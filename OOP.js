@@ -126,3 +126,5 @@ function Game(name, platform){
 const fifa= new Game("FIFA 23", "PlayStation");
 console.log(fifa.__proto__===Game.prototype);
 console.log(fifa.__proto__===Object.prototype);
+
+//In JavaScript, a prototype is a reference to another object that is used for property and method inheritance. Each object has a prototype, expect for the base object.

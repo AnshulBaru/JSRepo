@@ -33,7 +33,3 @@ const students ={
 
 console.log(students.School.SchoolName);
 
-const names={
-  boy1="Sanju",
-  boy2="Rajesh"
-}
