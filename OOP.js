@@ -128,3 +128,5 @@ console.log(fifa.__proto__===Game.prototype);
 console.log(fifa.__proto__===Object.prototype);
 
 //In JavaScript, a prototype is a reference to another object that is used for property and method inheritance. Each object has a prototype, expect for the base object.
+// When we say JavaScript is a prototype-based language, we mean that it uses prototypes to create and inherit properties and methods, instead of classical classes
+//  like in Java or C++ (though modern JavaScript uses class syntax, it still works under the hood using prototypes).
