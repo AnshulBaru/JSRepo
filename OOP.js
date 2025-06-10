@@ -50,46 +50,46 @@
 
 //Factory Function:
 
-function movie(title, year) {
+// function movie(title, year) {
 
-    const movieObj = {
-        title: title,
-        year: year,
-        getDetails() {
-            console.log(`
-            Title:${this.title}
-            Year: ${this.year}
-             `);
+//     const movieObj = {
+//         title: title,
+//         year: year,
+//         getDetails() {
+//             console.log(`
+//             Title:${this.title}
+//             Year: ${this.year}
+//              `);
 
-        },
-    };
-    return movieObj;
-}
+//         },
+//     };
+//     return movieObj;
+// }
 
-const movie1 = movie("The Avengers", 2012);
-console.log(movie1)
-movie1.getDetails();
+// const movie1 = movie("The Avengers", 2012);
+// console.log(movie1)
+// movie1.getDetails();
 
 
 //Constructor Function:
 
-function Movie(title, year) {
+// function Movie(title, year) {
 
-    this.title = title;
-    this.year = year;
+//     this.title = title;
+//     this.year = year;
 
-    this.getDetails = function () {
-        console.log(`
-            Title:${this.title}
-            Year: ${this.year}
-             `);
+//     this.getDetails = function () {
+//         console.log(`
+//             Title:${this.title}
+//             Year: ${this.year}
+//              `);
 
-    };
-}
+//     };
+// }
 //To invoke the above function we use "new" keyword
 
-const movie2 = new Movie('Avatar', 2030);
-console.log(movie2);
+// const movie2 = new Movie('Avatar', 2030);
+// console.log(movie2);
 
 
 //Another example
@@ -130,3 +130,18 @@ console.log(fifa.__proto__===Object.prototype);
 //In JavaScript, a prototype is a reference to another object that is used for property and method inheritance. Each object has a prototype, expect for the base object.
 // When we say JavaScript is a prototype-based language, we mean that it uses prototypes to create and inherit properties and methods, instead of classical classes
 //  like in Java or C++ (though modern JavaScript uses class syntax, it still works under the hood using prototypes).
+
+function Movie(title){
+this.title=title;
+}
+const movie1 = new Movie('The Avengers');
+
+movie1.year=2012;
+console.log(movie1);
+console.log(movie1.__proto__);
+
+const movie2=new Movie('Avatar')
+console.log(movie2)
+console.log(movie2.__proto__);
+//prototype of movie1 and movie2 is Movie
+console.log(movie2.__proto__.__proto__);
