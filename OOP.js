@@ -181,5 +181,8 @@ const p2 = new Person("Bheem");
 p1.sayHello(); 
 p2.sayHello(); 
 
+// prototype in arrays
 
+const inputs=[1,2,3,4,5];
+console.log(inputs.__proto__);
  
