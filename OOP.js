@@ -94,8 +94,8 @@
 
 //Another example
 function Student(className, rollNumber) {
-    this.className = className
-    this.rollNumber = rollNumber
+  this.className = className
+  this.rollNumber = rollNumber
 }
 
 const Ram = new Student("10th", 25);
@@ -108,39 +108,39 @@ console.log(Ram.rollNumber);
 //Prototype
 
 
-function Film(title){
-    this.title=title;
+function Film(title) {
+  this.title = title;
 }
-const film1=new Film('IronMan');
- film1.year=2025;
- console.log(film1);
+const film1 = new Film('IronMan');
+film1.year = 2025;
+console.log(film1);
 
- console.log(film1.__proto__)
+console.log(film1.__proto__)
 
 
 //Example
-function Game(name, platform){
-    this.name=name;
-    this.platform=platform;
+function Game(name, platform) {
+  this.name = name;
+  this.platform = platform;
 }
-const fifa= new Game("FIFA 23", "PlayStation");
-console.log(fifa.__proto__===Game.prototype);
-console.log(fifa.__proto__===Object.prototype);
+const fifa = new Game("FIFA 23", "PlayStation");
+console.log(fifa.__proto__ === Game.prototype);
+console.log(fifa.__proto__ === Object.prototype);
 
 //In JavaScript, a prototype is a reference to another object that is used for property and method inheritance. Each object has a prototype, expect for the base object.
 // When we say JavaScript is a prototype-based language, we mean that it uses prototypes to create and inherit properties and methods, instead of classical classes
 //  like in Java or C++ (though modern JavaScript uses class syntax, it still works under the hood using prototypes).
 
-function Movie(title){
-this.title=title;
+function Movie(title) {
+  this.title = title;
 }
 const movie1 = new Movie('The Avengers');
 
-movie1.year=2012;
+movie1.year = 2012;
 console.log(movie1);
 console.log(movie1.__proto__);
 
-const movie2=new Movie('Avatar')
+const movie2 = new Movie('Avatar')
 console.log(movie2)
 console.log(movie2.__proto__);
 //prototype of movie1 and movie2 is Movie
@@ -171,18 +171,27 @@ function Person(name) {
 }
 
 // Add method to the prototype
-Person.prototype.sayHello = function() {
+Person.prototype.sayHello = function () {
   console.log("Hello, my name is " + this.name);
 };
 
 const p1 = new Person("Arjun");
 const p2 = new Person("Bheem");
 
-p1.sayHello(); 
-p2.sayHello(); 
+p1.sayHello();
+p2.sayHello();
 
 // prototype in arrays
 
-const inputs=[1,2,3,4,5];
-console.log(inputs.__proto__);
- 
+const inputs = [1, 2, 3, 4, 5];
+console.log(inputs.__proto__.__proto__);
+
+//Problem Statement:
+let arr = [1, 2, 3];
+console.log(arr.constructor === Array);
+
+//Problem Statement2:
+
+let arr1 = new Array(3);
+let result = arr1.__proto__.__proto__;
+console.log(result)
