@@ -145,3 +145,41 @@ console.log(movie2)
 console.log(movie2.__proto__);
 //prototype of movie1 and movie2 is Movie
 console.log(movie2.__proto__.__proto__);
+console.log(Object.getPrototypeOf(movie2))
+
+
+
+// Constructor function
+function Person(name) {
+  this.name = name;
+}
+Person.prototype.age = 30;       // Adding a property to the prototype
+
+const john = new Person("John");   // Creating a new instance of Person
+
+john.__proto__.age = 40;    // Modifying the prototype using john's __proto__
+
+// Accessing age from john and from the prototype directly
+console.log(john.age);               // Output: 40
+console.log(Person.prototype.age);  // Output: 40
+
+
+// .prototype  example
+
+function Person(name) {
+  this.name = name;
+}
+
+// Add method to the prototype
+Person.prototype.sayHello = function() {
+  console.log("Hello, my name is " + this.name);
+};
+
+const p1 = new Person("Arjun");
+const p2 = new Person("Bheem");
+
+p1.sayHello(); 
+p2.sayHello(); 
+
+
+ 
