@@ -190,8 +190,14 @@ console.log(inputs.__proto__.__proto__);
 let arr = [1, 2, 3];
 console.log(arr.constructor === Array);
 
-//Problem Statement2:
+//Object.create
 
-let arr1 = new Array(3);
-let result = arr1.__proto__.__proto__;
-console.log(result)
+const car={
+  getDetails(name){
+    console.log(`Your car is ${name}`);
+  },
+};
+
+const car1 =Object.create(car);
+console.log(car1.__proto);
+car1.getDetails('Audi');
