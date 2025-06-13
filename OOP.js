@@ -198,6 +198,37 @@ const car={
   },
 };
 
-const car1 =Object.create(car);
-console.log(car1.__proto);
+const car1 =Object.create(car);  // Object.create will link car1 to car and establish prototype chain
+console.log(car1.__proto__);   //.__proto__ will tell us what will be the prototype of car1.Which is getDeatils in this case
 car1.getDetails('Audi');
+
+
+//Object.asssign()
+
+ const firstObj={a:2};
+ const secondObj={c:4,d:5};
+
+ returnedObj= Object.assign(firstObj, secondObj);
+
+ console.log(firstObj);
+ //or
+ console.log(returnedObj);  //Same output
+//To check:
+console.log(firstObj===returnedObj);
+
+
+//Object.freeze()
+
+const user = {
+  name: "Arjun",
+  address: {
+    city: "Delhi"
+  }
+};
+
+Object.freeze(user);
+
+user.address.city = "Mumbai";  // This will work because 'address' is not frozen
+
+console.log(user);
+
