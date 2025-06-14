@@ -192,29 +192,29 @@ console.log(arr.constructor === Array);
 
 //Object.create
 
-const car={
-  getDetails(name){
+const car = {
+  getDetails(name) {
     console.log(`Your car is ${name}`);
   },
 };
 
-const car1 =Object.create(car);  // Object.create will link car1 to car and establish prototype chain
+const car1 = Object.create(car);  // Object.create will link car1 to car and establish prototype chain
 console.log(car1.__proto__);   //.__proto__ will tell us what will be the prototype of car1.Which is getDeatils in this case
 car1.getDetails('Audi');
 
 
 //Object.asssign()
 
- const firstObj={a:2};
- const secondObj={c:4,d:5};
+const firstObj = { a: 2 };
+const secondObj = { c: 4, d: 5 };
 
- returnedObj= Object.assign(firstObj, secondObj);
+returnedObj = Object.assign(firstObj, secondObj);
 
- console.log(firstObj);
- //or
- console.log(returnedObj);  //Same output
+console.log(firstObj);
+//or
+console.log(returnedObj);  //Same output
 //To check:
-console.log(firstObj===returnedObj);
+console.log(firstObj === returnedObj);
 
 
 //Object.freeze()
@@ -232,3 +232,26 @@ user.address.city = "Mumbai";  // This will work because 'address' is not frozen
 
 console.log(user);
 
+
+// call/apply/bind methods in JS
+
+const vehicle = {
+  name: 'car',
+  color: 'black',
+  getDetails(brand, seats) {
+    console.log(`This is a ${this.color} ${this.name} of ${brand} company.
+      It has ${seats} seats`);
+  }
+};
+
+const bus = {
+  name: 'bus',
+  color: 'blue',
+}
+vehicle.getDetails("Audi", 5);
+
+vehicle.getDetails.call(bus, "Star", 50);
+vehicle.getDetails.apply(bus, ["Gold", 30]);
+
+const vehicle2 = vehicle.getDetails.bind(bus);
+vehicle2("silver",20)
