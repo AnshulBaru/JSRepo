@@ -254,4 +254,38 @@ vehicle.getDetails.call(bus, "Star", 50);
 vehicle.getDetails.apply(bus, ["Gold", 30]);
 
 const vehicle2 = vehicle.getDetails.bind(bus);
-vehicle2("silver",20)
+vehicle2("silver", 20)
+
+
+
+//Object and Array Destructuring 
+
+const obj = {
+  a: 1,                       //number
+  b: 2,                       //number
+  c: ['O', 'B', 'J'],         //Array
+  d: { value: 'Val' },        //Object
+}
+
+
+//Binding pattern : 
+// const { a, c } = obj;   //Destructuring in object... we picked a and c 
+// console.log(a);   // now is acting as a variable here(for understanding)
+// console.log(c);
+
+
+//Another forn of destructuring : destructuring it by renaming it 
+const { a: a1 } = obj;
+console.log(a1);
+// console.log(a);  //it will now not identify what a is as we renamed it a a1 for destructuring
+
+
+//Assignment Pattern:
+// if varible is already declared:
+let b;
+({ b: b } = obj);    //assigned the variable b to b so that we can use it again and again without writing
+                      // the object.property agian and again 
+console.log(b);        //just write console.log(assigned variable)
+
+//Array destructuring
+
