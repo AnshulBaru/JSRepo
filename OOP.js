@@ -284,8 +284,30 @@ console.log(a1);
 // if varible is already declared:
 let b;
 ({ b: b } = obj);    //assigned the variable b to b so that we can use it again and again without writing
-                      // the object.property agian and again 
+// the object.property agian and again 
 console.log(b);        //just write console.log(assigned variable)
 
 //Array destructuring
 
+const fruits = [
+  'Apple',
+  'Mango',
+  'Kiwi',
+  'Berry',
+  'Banana',
+  'lichi',
+];
+
+//Binding pattern:
+// const [a, , m, k] = fruits;  // it will give results according to index no. if we skip
+// // the value it will not give the output of that index no.
+// console.log(m);
+// console.log(k);
+
+// const [a,m,...f]=fruits;  //...f rest operator will give output of remaning fruits 
+//after apple and mango
+// console.log(f);
+  const [a,m,...[ki,be,ba]]=fruits;  //also destructure it like this 
+ 
+console.log(be);
+console.log(ki);
