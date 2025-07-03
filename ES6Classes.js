@@ -75,5 +75,4 @@ cat.introduce();  // Output: Hello, my name is Whiskers and I am a Cat.
 
 //Encapsulation in JavaScript
 
-
-
+//Classes in JS 
