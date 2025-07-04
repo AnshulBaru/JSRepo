@@ -64,15 +64,3 @@ const cat = new Animal("Whiskers", "Cat");
 // Call methods on the created objects
 dog.speak();      // Output: Buddy the Dog makes a sound.
 cat.introduce();  // Output: Hello, my name is Whiskers and I am a Cat.    
-
-
-//OOP
-//Inheritance
-//polymorphism
-// Class & Instances
-//Encapsulation
-//Abstract
-
-//Encapsulation in JavaScript
-
-//Classes in JS 
