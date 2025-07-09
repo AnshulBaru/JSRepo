@@ -1,5 +1,5 @@
 //Classes in JS: 
-//Classes are just an alternative way of creating objects.
+//Classes are just an alternative way of creating objects and it is considered as more convenient for developers
 
 class VehicleCl {
     //properties
