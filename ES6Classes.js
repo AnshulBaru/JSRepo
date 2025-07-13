@@ -67,8 +67,7 @@ dog.speak();      // Output: Buddy the Dog makes a sound.
 cat.introduce();  // Output: Hello, my name is Whiskers and I am a Cat.     
 
 
-
-
+cat.speak();
 
 
 
