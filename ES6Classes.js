@@ -1,5 +1,9 @@
 //Classes in JS: 
-//Classes are just an alternative way of creating objects and it is considered as more convenient for developers
+//Classes are just an alternative way of creating objects and it is considered 
+// as more convenient for developers
+
+
+//Syntax of Classes:
 
 class VehicleCl {
     //properties
@@ -26,7 +30,7 @@ veh1.getDetails();
 
 
 //Problem Statement:
-//Correct syntax to define a property inside a class in JS using ES6:
+//Correct syntax to define a property inside a class in JS using ES6: 
 class Person{
     constructor(){
         this.name="John";
