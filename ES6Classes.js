@@ -54,7 +54,7 @@ class Animal {
   // Define a method within the class
   speak() {
     console.log(`${this.name} the ${this.species} makes a sound.`);
-  }
+  } 
 
   // Another method
   introduce() {
