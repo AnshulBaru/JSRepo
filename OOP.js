@@ -311,3 +311,21 @@ const fruits = [
  
 console.log(be);
 console.log(ki);
+
+//Example of Constructor function:
+
+function Bike(model, color){
+  this.model= model;
+  this.color= color;
+
+  this.start=function(){
+    console.log(this.model + " is starting...");
+  };
+}
+  //Creating objects using constructor:
+  let bike1= new Bike("Yamaha", "Black");
+  let bike2= new Bike("Honda", "Red");
+ 
+
+  bike1.start();
+  bike2.start();
