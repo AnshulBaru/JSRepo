@@ -2,14 +2,14 @@
 //Classes are just an alternative way of creating objects and it is considered
 // as more convenient for developers
 
-//Syntax of Classes:
+//Syntax of Classes:(Class Declaration)
 
 class VehicleCl {
   //properties
   name;
   color;
   wheels;
-  //constructor function
+  //constructor function (It is optional if we don't have any values to initialize) We can skipt it
   constructor(name, color, wheel) {
     this.name = name;
     this.color = color;
@@ -27,7 +27,7 @@ const veh1 = new VehicleCl("Scooter", "Grey", 2);
 console.log(veh1);
 veh1.getDetails();
 
-//Problem Statement:
+//Problem  Statement:
 //Correct syntax to define a property inside a class in JS using ES6:
 class Person {
   constructor() {
@@ -67,5 +67,54 @@ cat.introduce(); // Output: Hello, my name is Whiskers and I am a Cat.
 
 cat.speak();
 
+//Class Expresssion: (this is similar to function syntax)
 
-//Es6 classes in Js 
+const Vehicle = class {};
+
+//Example:
+
+class Person1 {
+  name;
+  age;
+  gender;
+
+  constructor(name, age, gender) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
+  speak() {
+    console.log(
+      `Hello, my name is ${this.name} and I am ${this.age} years old`
+    );
+  }
+}
+
+class Student1 {
+  person;
+  major;
+  gpa;
+
+  constructor(person, major, gpa) {
+    this.person = person;
+    this.major = major;
+    this.gpa = gpa;
+  }
+  study() {
+    console.log(`I am studying ${this.major} and my GPA is ${this.gpa}.`);
+  }
+
+  speak() {
+    console.log(
+      `Hello, my name is ${this.person.name} and I am ${this.person.age} years old. I am also a student studying ${this.major}.`
+    );
+  }
+}
+
+const per1 = new Person1("John", 20, "M");
+
+per1.speak();
+
+const stu1 = new Student1(per1, "CS", 9);
+stu1.study();
+stu1.speak();
