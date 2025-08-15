@@ -71,7 +71,7 @@ cat.speak();
 
 const Vehicle = class {};
 
-//Example:
+//Example (Problem Statement on CN course ES6 Classes)
 
 class Person1 {
   name;
