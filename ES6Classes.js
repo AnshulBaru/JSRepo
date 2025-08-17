@@ -72,7 +72,7 @@ cat.speak();
 const Vehicle = class {};
 
 //Example (Problem Statement on CN course ES6 Classes)
-
+//This is done using Class Declaration
 class Person1 {
   name;
   age;
