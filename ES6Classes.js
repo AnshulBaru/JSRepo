@@ -9,11 +9,11 @@ class VehicleCl {
   name;
   color;
   wheels;
-  //constructor function (It is optional if we don't have any values to initialize) We can skipt it
+  //constructor function (It is optional if we don't have any values to initialize) We can skip it
   constructor(name, color, wheel) {
     this.name = name;
     this.color = color;
-    this.wheels = this.wheels;
+    this.wheels = this.wheel;
   }
   //methods
   getDetails() {
