@@ -115,6 +115,6 @@ const per1 = new Person1("John", 20, "M");
 
 per1.speak();
 
-const stu1 = new Student1(per1, "CS", 9);
+const stu1 = new Student1(per1, "CS", 15);
 stu1.study();
 stu1.speak();
