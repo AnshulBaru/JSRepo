@@ -10,10 +10,10 @@ class VehicleCl {
   color;
   wheels;
   //constructor function (It is optional if we don't have any values to initialize) We can skip it
-  constructor(name, color, wheel) {
+  constructor(name, color, wheels) {
     this.name = name;
     this.color = color;
-    this.wheels = this.wheel;
+    this.wheels = this.wheels;
   }
   //methods
   getDetails() {
@@ -67,11 +67,12 @@ cat.introduce(); // Output: Hello, my name is Whiskers and I am a Cat.
 
 cat.speak();
 
-//Class Expresssion: (this is similar to function syntax)
 
-const Vehicle = class {};
 
-//Example (Problem Statement on CN course ES6 Classes)
+
+
+//EXAMPLE: 
+//  (Problem Statement on CN course ES6 Classes)
 //This is done using Class Declaration
 class Person1 {
   name;
