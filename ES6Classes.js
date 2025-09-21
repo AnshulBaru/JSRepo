@@ -67,11 +67,7 @@ cat.introduce(); // Output: Hello, my name is Whiskers and I am a Cat.
 
 cat.speak();
 
-
-
-
-
-//EXAMPLE: 
+//EXAMPLE:
 //  (Problem Statement on CN course ES6 Classes)
 //This is done using Class Declaration
 class Person1 {
@@ -119,3 +115,6 @@ per1.speak();
 const stu1 = new Student1(per1, "CS", 15);
 stu1.study();
 stu1.speak();
+
+
+
