@@ -116,5 +116,25 @@ const stu1 = new Student1(per1, "CS", 15);
 stu1.study();
 stu1.speak();
 
+//ENCAPSULATION in JS:
 
+class Fruit {
+  //Private properties
+  #regNumber;
+  constructor(name, color, quantity, number) {
+    this.name = name;
+    this.color = color;
+    this.quantity = quantity; 
+    this.#regNumber = number;
+  }
+  getDetails() {
+    console.log(`
+      The ${this.name} is ${this.color} in color. Is is available in ${this.quantity} Kilos.
+      Registration number is: ${this.#regNumber}`);
+  
+    }
+}
 
+const Fru1 = new Fruit("Apple", "green", "10" , 101);
+console.log(Fru1);
+Fru1.getDetails();
