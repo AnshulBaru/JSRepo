@@ -138,3 +138,22 @@ class Fruit {
 const Fru1 = new Fruit("Apple", "green", "10" , 101);
 console.log(Fru1);
 Fru1.getDetails();
+
+// Fru1.#regNumber();     //it will not work outside the class as it is a private property
+
+
+//Problem state of course:
+class Student {
+  name;
+  sec;
+  #rollno;            // this is private property 
+  constructor(name,sec,rollno){
+    this.name=name;
+    this.sec=sec;
+    this.rollno=rollno;
+  }
+}
+const ram= new Student("Ram", "B", 3345);
+console.log(ram);
+
+//INHERITANCE IN JS:
