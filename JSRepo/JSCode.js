@@ -234,9 +234,8 @@ console.log("5" * 2);
 //     console.log("Valid Email");
 // }
 
-
 //NESTED IF STATEMENTS
-//EXAMPLE: 
+//EXAMPLE:
 //Check eligibility for driving licence
 //age>=1 -eligible else not eligible
 //passed the test- eligible and can obtain the licence
@@ -285,13 +284,11 @@ console.log("5" * 2);
 
 // let greater = num1 > num2 ? num1 : num2;
 
-
 // // if (num1>num2){
 // //     greater = num1;
 // // }else {
 // //     greater= num2;
 // // }
-
 
 // console.log('Greater number is ' + greater);
 
@@ -319,7 +316,7 @@ console.log("5" * 2);
 // }
 // console.log(sum);
 
-// // Factorial of number 6 
+// // Factorial of number 6
 // let result = 1; // Start with 1
 
 // for (l = 1; l <= 6; l++) {
@@ -328,7 +325,7 @@ console.log("5" * 2);
 
 // console.log(result)
 
-//PRINT ALL THE NUMBERS FROM 1 TO 50 
+//PRINT ALL THE NUMBERS FROM 1 TO 50
 
 // let e = 2;
 // for (; e <= 50; e = e + 2) {         // if initialization is done before you can skip in this line but you have to write semicolon at that place
@@ -337,7 +334,6 @@ console.log("5" * 2);
 // }
 
 //NUMBER IS PRIME OR NOT
-
 
 // let number = 6;
 // let isPrime = true;
@@ -372,7 +368,6 @@ console.log("5" * 2);
 //     console.log('notprime');
 // }
 
-
 //FIND WHETHER A NUMBER IS COMPOSITE OR NOT
 
 // let m=20;
@@ -398,8 +393,6 @@ console.log("5" * 2);
 //     j++;
 // }
 
-
-
 // let i = 0;
 // while (i <= 5) {
 //     console.log("no. of iterations" + " " + i); // " " are given to give space
@@ -422,8 +415,7 @@ console.log("5" * 2);
 //     } else {
 //         console.log('Take another guess');
 //     }
-// } while (guessedNum != randomNum);      
-
+// } while (guessedNum != randomNum);
 
 // const name = "Ram";
 // const age = 25;
@@ -432,16 +424,12 @@ console.log("5" * 2);
 // console.log(message);
 // Output: My name is Ram, and I am 25 years old
 
-
 //  NESTED LOOPS :
 //print multiplication table of 4*
 // let num = 4;
 // for (let i = 1; i <= 10; i++) {
 //     console.log(`${num} * ${i} = ${num * i}`);
 // }
-
-
-
 
 // //this will give me table of all numbers from 2 to 10
 
@@ -489,13 +477,13 @@ function printDetails(name) {
 function calculateAge(birthYear) {
   console.log(2020 - birthYear);
 }
-printDetails('Rahul');
-
+printDetails("Rahul");
 
 //Default Parameters:
-function sum(num1 = 0, num2 = 3) {        //Default values are given to parameters because in case we forget to give arguments
+function sum(num1 = 0, num2 = 3) {
+  //Default values are given to parameters because in case we forget to give arguments
   // Argument are the values passed to the function when it is called/Invoked.
-  console.log(`Sum of the numbers is: ${num1 + num2}`)
+  console.log(`Sum of the numbers is: ${num1 + num2}`);
 }
 sum(4, 5);
 sum(4);
@@ -510,12 +498,11 @@ const a = squared(5);
 console.log(a);
 
 function add(a, b) {
-  return a + b;  // returns the sum of a and b
-  console.log(a + b);    // this code will not be executed because any code after the retrun statement will not be executed.
+  return a + b; // returns the sum of a and b
+  console.log(a + b); // this code will not be executed because any code after the retrun statement will not be executed.
 }
-result = add(3, 4);  // calls the function and stores the value(7) in variale named 'result'
+result = add(3, 4); // calls the function and stores the value(7) in variale named 'result'
 console.log(result);
-
 
 // Function to compare the last digits of two numbers
 function lastDigit(num1, num2) {
@@ -534,12 +521,8 @@ console.log(lastDigit(101, 11)); // Expected output: true
 console.log(lastDigit(5, 12345)); // Expected output: true
 console.log(lastDigit(78, 89)); // Expected output: false
 
-
-
 // **** Problem statement*****
 // Develop a JavaScript function called commonDigits that accepts two positive integers, num1, and num2, as parameters. The function should determine whether the numbers have an equal number of digits or not. If they have an equal number of digits then store true in the answer else store false.
-
-
 
 // Expected Input
 // num1 = 78574
@@ -547,13 +530,11 @@ console.log(lastDigit(78, 89)); // Expected output: false
 // Expected Output
 // true
 
-
 // Expected Input
 // num1 = 74847
 // num2 = 781
 // Expected Output
 // false
-
 
 // Test Cases
 // Make a function named commonDigits
@@ -561,7 +542,6 @@ console.log(lastDigit(78, 89)); // Expected output: false
 // Count the number of digits in both the numbers
 // Check if both the numbers have equal numbers of digits
 // If they are equal return true else return false
-
 
 // Note
 // Use Math.floor when dividing the number by 10 to ensure that it returns data type number.
@@ -581,14 +561,13 @@ function commonDigits(num1, num2) {
 // Test cases
 console.log(commonDigits(78574, 78392)); // Expected output: true
 console.log(commonDigits(74847, 781));
-console.log(commonDigits(11234, 11455))
+console.log(commonDigits(11234, 11455));
 
 //** ARRAYS IN JS */
-const studentDetails = ['Alex', '1995', 'Suzy'];
+const studentDetails = ["Alex", "1995", "Suzy"];
 console.log(studentDetails);
 
-
-const historyMarks = [10, 20, 30, 40, 50, 60, 70];   //length of array is 7 but index no. of array is 6 (index no. = length-1)
+const historyMarks = [10, 20, 30, 40, 50, 60, 70]; //length of array is 7 but index no. of array is 6 (index no. = length-1)
 console.log(historyMarks);
 
 const fruits = ["Apple", "Banana", "Mango"];
@@ -600,17 +579,17 @@ console.log(cars.length);
 //DIFFERENT WAYS TO CREATE AN ARRAY
 // ** First one is using Square branckets that we used above
 // Another one is to use Array() constructor. e.g:
-const arr = new Array('Ram', 'Rahul', 'Sonam');
+const arr = new Array("Ram", "Rahul", "Sonam");
 console.log(arr);
 
 //**ACESSING ARRAYS */
 
-const cadetNames = ['Lakshman', 'Surya', 'Ojas'];
-console.log(cadetNames[2]);   //Acessing using square brackets and inside square brackets write index no. of the particular element that we want to print
+const cadetNames = ["Lakshman", "Surya", "Ojas"];
+console.log(cadetNames[2]); //Acessing using square brackets and inside square brackets write index no. of the particular element that we want to print
 
 const marks = [10, 20, 30, 40, 50, 60, 70, 80];
 console.log(marks[2]);
-marks[2] = 10;     // We can also modify any data in array using index number like this
+marks[2] = 10; // We can also modify any data in array using index number like this
 // and if we again console out after making this change, we will get another output which we modified
 console.log(marks[2]);
 
@@ -618,7 +597,7 @@ console.log(marks[2]);
 
 const cities = ["Mumbai", "Delhi", "Calcutta", "Jaipur", "Chennai"];
 console.log(cities.length);
-cities[2] = 'Kolkata'
+cities[2] = "Kolkata";
 console.log(cities);
 
 //** Adding an Element */
@@ -626,46 +605,44 @@ console.log(cities);
 //push
 const teams = ["CSK", "RCB", "MI", "LSG"];
 teams.push("GI");
-console.log(teams);    //push will only add the elements to the end of the array
+console.log(teams); //push will only add the elements to the end of the array
 
 //unshift
 teams.unshift("KKR");
-console.log(teams);   //unshift will add at the starting of the array 
+console.log(teams); //unshift will add at the starting of the array
 
 //**  Removing  an element */
 
 //pop
-teams.pop();              // pop will remove the elements from the end of the array
-teams.pop();            // if we agian write pop it will remove another element from the end of the array.
+teams.pop(); // pop will remove the elements from the end of the array
+teams.pop(); // if we agian write pop it will remove another element from the end of the array.
 
 console.log(teams);
-
 
 //shift
-teams.shift();        // shift will remove the element for the start of array
+teams.shift(); // shift will remove the element for the start of array
 console.log(teams);
-
 
 //**  Check the element is present or not  */
 
-//indexOf()                            
+//indexOf()
 teams.indexOf("RCB");
-const RCBIndex = teams.indexOf('RCB');
+const RCBIndex = teams.indexOf("RCB");
 console.log(RCBIndex);
-const GTIndex = teams.indexOf('GT');
-console.log(GTIndex);          //GT is not present in the array and any element which is not present in the array, it will return us -1
+const GTIndex = teams.indexOf("GT");
+console.log(GTIndex); //GT is not present in the array and any element which is not present in the array, it will return us -1
 
 //includes()                // includes() will aso tell the element is present or not but it will return boolean value
 
-const RCBIncludes = teams.includes('RCB');
+const RCBIncludes = teams.includes("RCB");
 console.log(RCBIncludes);
 
 //slice() and splice()\
 
-console.log(teams.slice(2));  // it will remove starting 2 elements from the array.. it creates the copy of original array 
-console.log(teams.slice(-1));// it will retain the last element of the array and other elements will be eliminated.
+console.log(teams.slice(2)); // it will remove starting 2 elements from the array.. it creates the copy of original array
+console.log(teams.slice(-1)); // it will retain the last element of the array and other elements will be eliminated.
 
-teams.splice(2, 0, "GT", "LSG");   //2 is index no. , 0 is delete count,  and third one "GT" is what ever we want to add, and
+teams.splice(2, 0, "GT", "LSG"); //2 is index no. , 0 is delete count,  and third one "GT" is what ever we want to add, and
 // we can add another element
 console.log(teams);
 
@@ -676,17 +653,9 @@ const city2 = ["Bangluru", "Pune"];
 const mergeCity = city1.concat(city2);
 console.log(mergeCity);
 
-
 /**   LOOPS OVER ARRAYS   */
 
-const Students = [
-  'Tina',
-  'Raj',
-  'Bobby',
-  'Seema',
-  'Alex',
-  'Sita'
-];
+const Students = ["Tina", "Raj", "Bobby", "Seema", "Alex", "Sita"];
 
 //**for loop:  */
 
@@ -694,10 +663,9 @@ const Students = [
 //   console.log(`Roll No ${i+1}: ${Students[i]}`);
 // }
 
-
 // for .. in loop:
 for (let i in Students) {
-  console.log(`Roll No ${Number(i) + 1}: ${Students[i]}`);   // type conversin is also done in this step to convert string to number
+  console.log(`Roll No ${Number(i) + 1}: ${Students[i]}`); // type conversin is also done in this step to convert string to number
 }
 
 // for ..of loop:
@@ -706,9 +674,9 @@ for (let student of Students) {
 }
 
 //** SPREAD AND REST OPERATOR  */
-const aprilBatch = ['Tina', 'Madhur'];
-const mayBatch = ['Ritik', 'Deepak', 'Shalini'];
-const juneBatch = ['Saba', 'Shivani'];
+const aprilBatch = ["Tina", "Madhur"];
+const mayBatch = ["Ritik", "Deepak", "Shalini"];
+const juneBatch = ["Saba", "Shivani"];
 const julyBatch = [];
 
 // function addStudent(batch, student){
@@ -725,11 +693,11 @@ function addStudents(batch, ...students) {
   }
   console.log(batch);
 }
-addStudents(aprilBatch, 'Sunny', 'Ritu', 'Sheena');
+addStudents(aprilBatch, "Sunny", "Ritu", "Sheena");
 
 //SPREAD OPERATOR:
 
-const newBatch = [...mayBatch];   //Shallow copy, which means the changes made to the original one will not effect tot he new one 
+const newBatch = [...mayBatch]; //Shallow copy, which means the changes made to the original one will not effect tot he new one
 //spread operator can be used to expand array and then copy it (expanding and copying, both work are done)
 //if we use spread operator  it will make a copy and don't make any change to newBatch
 console.log(newBatch);
@@ -738,27 +706,27 @@ mayBatch.push("newStudent");
 console.log(mayBatch);
 console.log(newBatch);
 
-
-
 const arr3 = [...mayBatch, ...juneBatch];
 console.log(arr3);
 
 //**BREAK AND CONTINUE */
 
-//find first five even nos. and a new array to be created 
+//find first five even nos. and a new array to be created
 const inputs = [11, 32, 12, 45, 65, 94, 7, 78, 10, 100, 131, 67, 81, 92, 53];
 const evenNumbers = [];
 
-for (let i of inputs) {   // this for will return all values of array
-  if (i % 2 !== 0) {      // (this is the condition) this will check whether values are even or not
-    continue;         // continue will skip all those iterations when odd numbers are coming   
+for (let i of inputs) {
+  // this for will return all values of array
+  if (i % 2 !== 0) {
+    // (this is the condition) this will check whether values are even or not
+    continue; // continue will skip all those iterations when odd numbers are coming
   }
   evenNumbers.push(i);
   if (evenNumbers.length === 5) {
     break;
   }
   console.log(evenNumbers); // we will get 4 elements in the output because after using break the loop will be terminated
-  // so we will console.log out of the loop 
+  // so we will console.log out of the loop
 }
 
 console.log(evenNumbers);
@@ -767,13 +735,10 @@ console.log(evenNumbers);
 
 // You are tasked with creating a program that processes an array of positive integers. Your goal is to find the sum of all even numbers in the array, but you need to implement a special condition: if you encounter a number that is a multiple of 5, you should skip it and move on to the next element without including it in the sum.
 
-
-
 // Expected Input
 // [1,6,8,3,5,20,10]
 // Expected Output
 // 14
-
 
 // Test Cases
 // Find all the even elements in the array
@@ -785,8 +750,9 @@ function sumOfArray(arr) {
   let sum = 0;
 
   for (let num of arr) {
-    if (num % 2 === 0 && num % 5 !== 0) { // Check if even and not divisible by 5
-      sum += num;     //means sum= sum+num
+    if (num % 2 === 0 && num % 5 !== 0) {
+      // Check if even and not divisible by 5
+      sum += num; //means sum= sum+num
     }
   }
 
@@ -802,7 +768,7 @@ console.log(answer); // Expected output: 14
 // let str = "JavaScript is an amazing language."
 
 // for (let i = 0; i < str.length; i++) {
-//   console.log(str.charAt(i));         //charAt will give us the character at the particular index no. 
+//   console.log(str.charAt(i));         //charAt will give us the character at the particular index no.
 //   //The charAt() method in JavaScript is used to find and retrieve characters at specified indices (index nos.) in a string
 // }
 
@@ -813,55 +779,49 @@ function countChars(str, ch) {
     if (str.charAt(i) === ch) {
       count++;
     }
-
-
   }
   console.log(`Occurrences of character ${ch} is: ${count}`);
 }
-let str = "JavaScript is an amazing language."
-let charToFind = 'a';
+let str = "JavaScript is an amazing language.";
+let charToFind = "a";
 
 countChars(str, charToFind);
 
 //METHODS IN STRINGS//
 
-let string = 'JavaScript is, a Dynamically, typed language.';
+let string = "JavaScript is, a Dynamically, typed language.";
 
 // includes() :
 // includes returns true or false if a certain substring is included/present or not
 
-console.log(string.includes('is'));
+console.log(string.includes("is"));
 
 //replace() :
-console.log(string.replace("is", 'was'));
+console.log(string.replace("is", "was"));
 
 //replaceAll() :
-console.log(string.replaceAll('is', 'was'));
-console.log(string.replaceAll('a', '@'));
+console.log(string.replaceAll("is", "was"));
+console.log(string.replaceAll("a", "@"));
 
 //trim() :  //trim() will remove whitespace (spaces, tabs, and newlines) from both the beginning and the end of a string
-console.log(string.trim())
-
+console.log(string.trim());
 
 //substring() :
-console.log(string.substring(3));   //cutting out everything before this index no.3
-console.log(string.substring(3, 10));   // get characters from index no.3 to index no.9... 10th index no. is excluded from substring
-console.log(string.substring(-4, -12));  // -ve value will be converted to 0 
-
+console.log(string.substring(3)); //cutting out everything before this index no.3
+console.log(string.substring(3, 10)); // get characters from index no.3 to index no.9... 10th index no. is excluded from substring
+console.log(string.substring(-4, -12)); // -ve value will be converted to 0
 
 //slice() :
 console.log(string.slice(3, 12)); // similar to substring but diffent when we give negative value
-console.log(string.slice(-3));   // will give last 3 characters 
+console.log(string.slice(-3)); // will give last 3 characters
 console.log(string.slice(-9, -3)); // will give from last 9th character till last 3rd character
 
 //split() :    // it will convert the string into an array
 //we have to tell on which token we want to split. Whether we want to split on space or comma or  explamation mark or any character.
 
-
-// let words = string.split(" ")  //where ever we find space it will split 
-let words = string.split(",")     //where ever we find comma it will split
+// let words = string.split(" ")  //where ever we find space it will split
+let words = string.split(","); //where ever we find comma it will split
 console.log(words);
-
 
 /** OBJECTS IN JS  */
 const student = {
@@ -875,8 +835,7 @@ const student = {
 };
 console.log(student);
 
-console.log(student.hobby); // to access a particular key inside the Object we use dot notation (e.g student.hobby) or square notation(e.g student["name"]) 
-console.log(student['name']);
+console.log(student.hobby); // to access a particular key inside the Object we use dot notation (e.g student.hobby) or square notation(e.g student["name"])
+console.log(student["name"]);
 console.log(student[100]);
-student.show();  //calling of function  
-
+student.show(); //calling of function

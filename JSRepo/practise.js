@@ -46,7 +46,7 @@ const car = new Vehicle("Car", "blue", 4);
 
 car.getDetails();
 
-class Cars{
+class Cars {
   constructor(model, colour) {
     this.model = model;
     this.colour = colour;
@@ -57,9 +57,8 @@ class Cars{
 }
 let c1 = new Cars("Porshe GTR", "Red");
 let c2 = new Cars("Toyota Tacoma", "White");
- 
+
 c1.name();
 c2.name();
 
-
-console.log({}+[]);
+console.log({} + []);

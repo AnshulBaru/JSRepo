@@ -93,7 +93,7 @@ let num3 = Infinity;
 console.log(12 / 0);
 console.log(188 / Infinity);
 console.log("Initial Commit");
-console.log ("SecondCommit"); 
+console.log("SecondCommit");
 console.log("Third commit");
 console.log("forth commit");
 console.log("fifth commit");
