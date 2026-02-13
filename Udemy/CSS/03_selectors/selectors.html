@@ -44,14 +44,41 @@
 
       /* 7. Child Selector    */
       div > p {
-        background-color:#640606;
+        background-color: #640606;
       }
 
       /* 8. Adjacent Sibling Selector    */
+      h1 + p {
+        font-weight: bold;
+      }
+
       /* 9. General Sibling Selector    */
+      h2 ~ p {
+        color: #e44d0c;
+      }
+
       /* 10. Pseudo-class Selector    */
+      a:hover {
+        background-color: #3bd10e;
+        text-decoration: none;
+        color: #1a1a1a;
+        padding: 5px;
+        margin: 4px;
+      }
+
       /* 11. Pseudo-element Selector    */
+      p::first-letter {
+        font-weight: bold;  
+        font-size: 30px;
+      }
+
       /* 12. Grouping Selector    */
+         h2,h2,h3{
+            color:orange;
+         }
+
+
+
     </style>
   </head>
   <body>
@@ -79,11 +106,13 @@
       </p>
 
       <div>
-        <p>Lorem ipsum dolor sit amet, consectetur
-         adipisicing elit. Consequatur, vel.
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur,
+          vel.
         </p>
-        <p>Lorem ipsum dolor sit amet, consectetur
-         adipisicing elit. Consequatur, vel.
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur,
+          vel.
         </p>
       </div>
     </article>
