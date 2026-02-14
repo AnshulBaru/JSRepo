@@ -63,3 +63,34 @@
 
 // console.log({} + []);
 
+let car = "Honda City";
+let motorcycle = "Yamaha";
+console.log(car);
+console.log(car.length);
+console.log(car.toLowerCase());
+console.log(car.toUpperCase());
+console.log(car.concat(" ", motorcycle)); //" " is added for space betweent the car and motorcycle
+
+console.log(10 % 2);
+console.log(3 * 2);
+
+let i = 10;
+
+console.log(i++);
+console.log(i);
+
+let j = 3;
+console.log(j ** 3);
+
+
+
+// Sum of integers from 1 to 10:
+let sum=0;
+for(k=1; k<=10; k++){
+    if (k<=10){
+        sum=sum+k;
+        }
+}
+console.log(sum)
+
+//Check whether a number is prime or not
