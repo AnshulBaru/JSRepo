@@ -98,11 +98,41 @@
         width: 100%;
         padding: 10px;
         cursor: pointer;
+      }
+      .nav2 .login-btn:hover {
+        background-color: rgb(13, 145, 11);
+        border: 1px solid white;
+      }
+
+      .nav3 {
+        background-color: rgb(12, 176, 205);
+        padding: 10px;
+      }
+
+      .nav3 ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .nav3 a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        display: block;
+      }
+      .nav3 .dropdown:hover .dropdown-content {
+        display: block;
+        position: absolute;
+        background-color: rgb(1, 62, 73);
+        color: #1a1a1a;
+        min-width: 120px;
         
       }
-      .nav2 .login-btn:hover{
-        background-color: rgb(13, 145, 11);
-        border:1px solid white;
+      .nav3 .dropdown-content {
+        display: none;
       }
     </style>
   </head>
@@ -142,6 +172,8 @@
             <a href="#"> About</a>
             <div class="dropdown-content">
               <a href="#">Our Story</a>
+              <a href="#">Team</a>
+              <a href="#">Contact</a>
             </div>
           </li>
           <li><a href="#"> Products</a></li>
