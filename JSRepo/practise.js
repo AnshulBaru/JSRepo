@@ -51,15 +51,32 @@
 
 //Functions in JS
 
-function greetUser(userName){
-    console.log(`Hello ${userName} welcome to the app`)
+function greetUser(){
+    console.log("Hello my name is Ram")
 }
-greetUser("Ram");
-greetUser("Suraj")
 
+greetUser();
 
-
-function User(NameOfUser, city){
-console.log(`Hey is ${NameOfUser}, he lives in ${city} `)
+//Return statement in JS
+function multiplied(number){
+return number*number
 }
-User("Ram", "Indore")
+
+const a= multiplied(5);
+console.log(a);
+
+function add(a){
+    return a+20
+}
+const b= add(10);
+console.log(b)
+
+//Arrays in JS
+let fruits=["Apple", "Banana", "Mangos"]
+console.log(fruits);
+
+
+const marks=[10, 20, 40, 45]
+console.log(marks[3])
+
+//loop in array:
