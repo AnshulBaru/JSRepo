@@ -48,3 +48,18 @@
 //   }
 //   console.log("******");
 // }
+
+//Functions in JS
+
+function greetUser(userName){
+    console.log(`Hello ${userName} welcome to the app`)
+}
+greetUser("Ram");
+greetUser("Suraj")
+
+
+
+function User(NameOfUser, city){
+console.log(`Hey is ${NameOfUser}, he lives in ${city} `)
+}
+User("Ram", "Indore")
