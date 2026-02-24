@@ -83,5 +83,5 @@ console.log(marks[3])
 const students=['Tina', 'Raj', 'Bobby', 'Seema', 'Alex', 'Sita'];
 
 for (let i=0; i<students.length; i++){
-    console.log(`Roll No. ${i+1}: ${students[i]}`);
+     console.log(`Roll No. ${i+1}: ${students[i]}`);
 }
