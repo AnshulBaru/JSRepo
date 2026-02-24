@@ -80,3 +80,8 @@ const marks=[10, 20, 40, 45]
 console.log(marks[3])
 
 //loop in array:
+const students=['Tina', 'Raj', 'Bobby', 'Seema', 'Alex', 'Sita'];
+
+for (let i=0; i<students.length; i++){
+    console.log(`Roll No. ${i+1}: ${students[i]}`);
+}
