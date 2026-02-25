@@ -80,8 +80,19 @@ const marks=[10, 20, 40, 45]
 console.log(marks[3])
 
 //loop in array:
-const students=['Tina', 'Raj', 'Bobby', 'Seema', 'Alex', 'Sita'];
+// const students=['Tina', 'Raj', 'Bobby', 'Seema', 'Alex', 'Sita'];
 
-for (let i=0; i<students.length; i++){
-     console.log(`Roll No. ${i+1}: ${students[i]}`);
-}
+// for (let i=0; i<students.length; i++){
+//      console.log(`Roll No. ${i+1}: ${students[i]}`);
+// }
+
+//Resp Operator 
+ const aprilBatch=["Tina", "Madhur"];
+ function addStudents(batch, ...students){
+    for(let i of students){
+        batch.push(i)
+    }
+    console.log(batch);
+
+ }
+ addStudents(aprilBatch, "Sunny", "Ritu", "Sheena")
