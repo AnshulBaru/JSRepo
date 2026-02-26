@@ -87,12 +87,49 @@ console.log(marks[3])
 // }
 
 //Resp Operator 
- const aprilBatch=["Tina", "Madhur"];
- function addStudents(batch, ...students){
+const aprilBatch=["Tina","Madhur"]
+
+function addStudents(batch, ...students){
     for(let i of students){
         batch.push(i)
     }
-    console.log(batch);
+    console.log(batch)
+}
 
- }
- addStudents(aprilBatch, "Sunny", "Ritu", "Sheena")
+addStudents(aprilBatch, "Sunny", "Rity","Sheena")
+
+//SECOND PROBLEM:
+
+const newClass=["Ram","Sham"]
+
+function addNewStudents(newStudents, ...more){
+    for (let i of more){
+        newStudents.push(i)
+    }
+    console.log(newStudents);
+}
+addNewStudents(newClass, "Suraj", "Ravi", "Pawan")
+
+//THIRD PROBLEM:
+
+const basket=["Apple", "Banana"];
+
+function addFruits(fruitBasket, ...newFruits){
+       for(let i of newFruits){
+        fruitBasket.push(i);
+       }
+       console.log(fruitBasket);
+}
+addFruits(basket, "Mango", "Pear", "Apricot")
+
+
+
+//Methods in JS
+
+let string = "JavaScript is, a dynamically, typed language."
+
+console.log(string.slice(-3))
+console.log(string.slice(-9,-3))
+
+
+//Objects in js
