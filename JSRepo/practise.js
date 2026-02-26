@@ -51,85 +51,104 @@
 
 //Functions in JS
 
-function greetUser(){
-    console.log("Hello my name is Ram")
-}
-
-greetUser();
-
-//Return statement in JS
-function multiplied(number){
-return number*number
-}
-
-const a= multiplied(5);
-console.log(a);
-
-function add(a){
-    return a+20
-}
-const b= add(10);
-console.log(b)
-
-//Arrays in JS
-let fruits=["Apple", "Banana", "Mangos"]
-console.log(fruits);
-
-
-const marks=[10, 20, 40, 45]
-console.log(marks[3])
-
-//loop in array:
-// const students=['Tina', 'Raj', 'Bobby', 'Seema', 'Alex', 'Sita'];
-
-// for (let i=0; i<students.length; i++){
-//      console.log(`Roll No. ${i+1}: ${students[i]}`);
+// function greetUser(){
+//     console.log("Hello my name is Ram")
 // }
 
-//Resp Operator 
-const aprilBatch=["Tina","Madhur"]
+// greetUser();
 
-function addStudents(batch, ...students){
-    for(let i of students){
-        batch.push(i)
-    }
-    console.log(batch)
-}
+// //Return statement in JS
+// function multiplied(number){
+// return number*number
+// }
 
-addStudents(aprilBatch, "Sunny", "Rity","Sheena")
+// const a= multiplied(5);
+// console.log(a);
 
-//SECOND PROBLEM:
+// function add(a){
+//     return a+20
+// }
+// const b= add(10);
+// console.log(b)
 
-const newClass=["Ram","Sham"]
+// //Arrays in JS
+// let fruits=["Apple", "Banana", "Mangos"]
+// console.log(fruits);
 
-function addNewStudents(newStudents, ...more){
-    for (let i of more){
-        newStudents.push(i)
-    }
-    console.log(newStudents);
-}
-addNewStudents(newClass, "Suraj", "Ravi", "Pawan")
 
-//THIRD PROBLEM:
+// const marks=[10, 20, 40, 45]
+// console.log(marks[3])
 
-const basket=["Apple", "Banana"];
+// //loop in array:
+// // const students=['Tina', 'Raj', 'Bobby', 'Seema', 'Alex', 'Sita'];
 
-function addFruits(fruitBasket, ...newFruits){
-       for(let i of newFruits){
-        fruitBasket.push(i);
-       }
-       console.log(fruitBasket);
-}
-addFruits(basket, "Mango", "Pear", "Apricot")
+// // for (let i=0; i<students.length; i++){
+// //      console.log(`Roll No. ${i+1}: ${students[i]}`);
+// // }
+
+// //Resp Operator 
+// const aprilBatch=["Tina","Madhur"]
+
+// function addStudents(batch, ...students){
+//     for(let i of students){
+//         batch.push(i)
+//     }
+//     console.log(batch)
+// }
+
+// addStudents(aprilBatch, "Sunny", "Rity","Sheena")
+
+// //SECOND PROBLEM:
+
+// const newClass=["Ram","Sham"]
+
+// function addNewStudents(newStudents, ...more){
+//     for (let i of more){
+//         newStudents.push(i)
+//     }
+//     console.log(newStudents);
+// }
+// addNewStudents(newClass, "Suraj", "Ravi", "Pawan")
+
+// //THIRD PROBLEM:
+
+// const basket=["Apple", "Banana"];
+
+// function addFruits(fruitBasket, ...newFruits){
+//        for(let i of newFruits){
+//         fruitBasket.push(i);
+//        }
+//        console.log(fruitBasket);
+// }
+// addFruits(basket, "Mango", "Pear", "Apricot")
 
 
 
 //Methods in JS
 
-let string = "JavaScript is, a dynamically, typed language."
+// let string = "JavaScript is, a dynamically, typed language."
 
-console.log(string.slice(-3))
-console.log(string.slice(-9,-3))
+// console.log(string.slice(-3))
+// console.log(string.slice(-9,-3))
 
 
 //Objects in js
+
+// const student={
+//     name: "Alex",
+//     age: 10,
+//     hobby:"Dancing",
+//     100: "hundred",
+//     show:function(){
+//         console.log("This is student detail section")
+//     }
+// }
+// console.log(student);
+// console.log(student.hobby);
+// console.log(student["name"]); // can also use [] with "" for access particlar object
+
+
+//Arrow functon in JS
+
+
+
