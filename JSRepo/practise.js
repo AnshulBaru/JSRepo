@@ -183,13 +183,23 @@
 
 //Constructor function
 
-function Person(name, age){
-    this.name=name;
-    this.age=age;
-}
-const person1=new Per
-son("Ajay", 30);
-const person2=new Person("suraj", 20);
-console.log(person1);
-console.log(person2)
+// function Person(name, age){
+//     this.name=name;
+//     this.age=age;
+// }
+// const person1=new Per
+// son("Ajay", 30);
+// const person2=new Person("suraj", 20);
+// console.log(person1);
+// console.log(person2)
 
+//filter()
+
+const numbers = [1,2,3,4,5,6];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers);
+
+
+const names=["Arun", "Zara", "Johnathan", "Eva"];
+const longNames=names.filter(name=>name.length>4);
+console.log(longNames);
