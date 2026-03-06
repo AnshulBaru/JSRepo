@@ -149,6 +149,47 @@
 
 
 //Arrow functon in JS
+//Ex1:
+// const add=(a,b)=> a+b;
+//     console.log(add(2,3))
+
+// //Ex2:
+// const square=x=>x*x;
+// console.log(square(4));
+
+// //Ex2:
+// const greet=name=> {
+//     return `Hello ${name}!`;
+// }
+// console.log(greet("Alice"));
+
+//Hoisting in JS
+
+// greet();
+// function greet(){
+//     console.log("Hello, World")
+// }
 
 
+
+
+
+
+
+
+
+
+
+
+//Constructor function
+
+function Person(name, age){
+    this.name=name;
+    this.age=age;
+}
+const person1=new Per
+son("Ajay", 30);
+const person2=new Person("suraj", 20);
+console.log(person1);
+console.log(person2)
 
