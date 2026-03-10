@@ -5,17 +5,17 @@
 //Syntax of Classes:(Class Declaration)
 
 class VehicleCl {
-  //properties
+  //properties:
   name;
   color;
   wheels;
-  //constructor function (It is optional if we don't have any values to initialize) We can skip it
+  //constructor function: (It is optional if we don't have any values to initialize) We can skip it
   constructor(name, color, wheels) {
     this.name = name;
     this.color = color;
     this.wheels = this.wheels;
   }
-  //methods
+  //methods:
   getDetails() {
     console.log(`
         The ${this.name} is ${this.color} in color.
@@ -82,7 +82,7 @@ class Person1 {
   }
   speak() {
     console.log(
-      `Hello, my name is ${this.name} and I am ${this.age} years old`
+      `Hello, my name is ${this.name} and I am ${this.age} years old`,
     );
   }
 }
@@ -103,7 +103,7 @@ class Student1 {
 
   speak() {
     console.log(
-      `Hello, my name is ${this.person.name} and I am ${this.person.age} years old. I am also a student studying ${this.major}.`
+      `Hello, my name is ${this.person.name} and I am ${this.person.age} years old. I am also a student studying ${this.major}.`,
     );
   }
 }
@@ -124,37 +124,75 @@ class Fruit {
   constructor(name, color, quantity, number) {
     this.name = name;
     this.color = color;
-    this.quantity = quantity; 
+    this.quantity = quantity;
     this.#regNumber = number;
   }
   getDetails() {
     console.log(`
       The ${this.name} is ${this.color} in color. Is is available in ${this.quantity} Kilos.
       Registration number is: ${this.#regNumber}`);
-  
-    }
+  }
 }
 
-const Fru1 = new Fruit("Apple", "green", "10" , 101);
+const Fru1 = new Fruit("Apple", "green", "10", 101);
 console.log(Fru1);
 Fru1.getDetails();
 
 // Fru1.#regNumber();     //it will not work outside the class as it is a private property
 
-
 //Problem state of course:
 class Student {
   name;
   sec;
-  #rollno;            // this is private property 
-  constructor(name,sec,rollno){
-    this.name=name;
-    this.sec=sec;
-    this.rollno=rollno;
+  #rollno; // this is private property
+  constructor(name, sec, rollno) {
+    this.name = name;
+    this.sec = sec;
+    this.rollno = rollno;
   }
 }
-const ram= new Student("Ram", "B", 3345);
+const ram = new Student("Ram", "B", 3345);
 console.log(ram);
 
 //INHERITANCE IN JS:
- 
+class Vehicle {
+  constructor(name, color, wheels, number) {
+    this.name = name;
+    this.color = color;
+    this.wheels = wheels;
+  }
+  getDetails() {
+    console.log(`The ${this.name} is ${this.color} in color of ${this.brand} company.
+      It is for the ${this.purpose}`);
+  }
+}
+
+class Car extends Vehicle {    //extends keyword will let Car class inherit all the features of Vehicle class.
+  constructor(color, brand, purpose) {
+    super("car", color, 4)   //super uses property of Vehicle class in Car class 
+    this.brand = brand;
+    this.purpose = purpose;
+  }
+}
+const car1=new Car("Red","Audi", "Luxury Travelling");
+car1.getDetails();
+console.log(car1.__proto__);
+
+//Getter and Setter:
+
+class Circle{
+  constructor(radius){
+    this.radius=radius;
+  } 
+
+get diameter(){
+  return this.radius*2;
+}
+// getDiameter(){
+//   console.log(this.radius *2)
+// }  
+}
+
+const circle= new Circle(4);
+console.log(circle.radius)
+// circle.getDiameter();

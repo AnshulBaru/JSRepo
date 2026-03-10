@@ -75,7 +75,6 @@
 // let fruits=["Apple", "Banana", "Mangos"]
 // console.log(fruits);
 
-
 // const marks=[10, 20, 40, 45]
 // console.log(marks[3])
 
@@ -86,7 +85,7 @@
 // //      console.log(`Roll No. ${i+1}: ${students[i]}`);
 // // }
 
-// //Resp Operator 
+// //Resp Operator
 // const aprilBatch=["Tina","Madhur"]
 
 // function addStudents(batch, ...students){
@@ -122,15 +121,12 @@
 // }
 // addFruits(basket, "Mango", "Pear", "Apricot")
 
-
-
 //Methods in JS
 
 // let string = "JavaScript is, a dynamically, typed language."
 
 // console.log(string.slice(-3))
 // console.log(string.slice(-9,-3))
-
 
 //Objects in js
 
@@ -146,7 +142,6 @@
 // console.log(student);
 // console.log(student.hobby);
 // console.log(student["name"]); // can also use [] with "" for access particlar object
-
 
 //Arrow functon in JS
 //Ex1:
@@ -170,17 +165,6 @@
 //     console.log("Hello, World")
 // }
 
-
-
-
-
-
-
-
-
-
-
-
 //Constructor function
 
 // function Person(name, age){
@@ -195,12 +179,33 @@
 
 //filter()
 
-const numbers = [1,2,3,4,5,6];
-const evenNumbers = numbers.filter(num => num % 2 === 0);
-console.log(evenNumbers);
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const evenNumbers = numbers.filter((num) => num % 2 === 0);
+// console.log(evenNumbers);
 
+// const names = ["Arun", "Zara", "Johnathan", "Eva"];
+// const longNames = names.filter((name) => name.length > 4);
+// console.log(longNames);
 
-const names=["Arun", "Zara", "Johnathan", "Eva"];
-const longNames=names.filter(name=>name.length>4);
-console.log(longNames);
+// //Classes in JS
+
+// class VehicleCl {
+//   //properties:
+//   name;
+//   color;
+//   wheels;
+//   //constructor function:
+//   constructor(name, color, wheels) {
+//     this.name = name;
+//     this.color = color;
+//     this.wheels = wheels;
+//   }
+//   //methods:
+//   getDetails() {
+//     console.log(`The ${this.name} is ${this.color} in color.
+//                  It has ${wheels}wheels`);
+//   }
+// }
+// const veh1= new VehicleCl("Scooter", "Grey", 2);
+// console.log(veh1)
 
