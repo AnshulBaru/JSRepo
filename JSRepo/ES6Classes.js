@@ -180,19 +180,43 @@ console.log(car1.__proto__);
 
 //Getter and Setter:
 
-class Circle{
-  constructor(radius){
-    this.radius=radius;
-  } 
+class User {
+  constructor(name) {
+    this._name = name;
+  }
 
-get diameter(){
-  return this.radius*2;
-}
-// getDiameter(){
-//   console.log(this.radius *2)
-// }  
+  // Getter
+  get name() {
+    return this._name;
+  }
+
+  // Setter
+  set name(newName) {
+    this._name = newName;
+  }
 }
 
-const circle= new Circle(4);
-console.log(circle.radius)
-// circle.getDiameter();
+let u1 = new User("Rahul");
+
+console.log(u1.name); // getter runs
+
+u1.name = "Aman";     // setter runs
+console.log(u1.name);
+
+
+//Built In Objects in JS
+
+const today =new Date();
+console.log(today);
+
+const birthDate=new Date("1999-06-12");
+console.log(birthDate);
+
+const someDay=new Date(1990, 7);
+console.log(someDay)
+
+console.log(birthDate.getFullYear());
+
+console.log(birthDate.toDateString());
+const birthStr = birthDate.toString();
+console.log(birthStr.slice(11,20))
